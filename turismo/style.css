@@ -76,5 +76,20 @@ a:hover{
 }
 
 .hero {
-    background-image: url(assets/img/hero.webp);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2)),
+     url(assets/img/hero.webp);
+    background-size: cover;
+    min-height: 100vh; 
+}
+
+.hero h1 {
+    position: relative;
+    top: 80px;
+    font-size: 3.2rem;
+    max-width: 700px;
+}
+.hero p {
+    position: relative;
+    top: 120px;
+    max-width: 400px;
 }
