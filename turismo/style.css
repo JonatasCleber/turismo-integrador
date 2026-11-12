@@ -60,6 +60,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--cor-destaque);
     padding: 10px;
 }
 .nav-bar{
@@ -70,9 +71,14 @@ nav{
 a{
     text-decoration: none;
     color: black;
+    margin-left: 20%;
+    text-align: left;
+    position: relative;
+    top: 90px;
+    font-weight: 600;
 }
 a:hover{
-    color: brown;
+    color: var(--cor-texto);
 }
 
 .hero {
@@ -87,9 +93,18 @@ a:hover{
     top: 80px;
     font-size: 3.2rem;
     max-width: 700px;
+    color: white;
+    left: 4%;
 }
 .hero p {
     position: relative;
     top: 120px;
     max-width: 400px;
+    color: var(--cor-fundo);
+    left: 4%;
+}
+
+.titulo {
+    position: relative;
+    top: 90px;
 }
