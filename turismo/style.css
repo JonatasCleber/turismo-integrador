@@ -3,12 +3,77 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+  /* Marca */
+  --cor-primaria: #B5532A;          /* arenito avermelhado / terra */
+  --cor-primaria-escura: #8A3C1B;
+  --cor-primaria-clara: #F3DDD0;
 
+  --cor-secundaria: #D9A441;        /* capim dourado / sol do cerrado */
+  --cor-secundaria-escura: #B8851F;
+
+  --cor-destaque: #5F7A4A;          /* verde musgo / campo rupestre */
+  --cor-destaque-escura: #445A33;
+
+  --cor-agua: #1F5F73;              /* poço azul / água profunda */
+  --cor-agua-escura: #143F4E;
+
+  --cor-botao: #C2410C;             /* laranja queimado – reservar */
+  --cor-botao-hover: #9A3412;
+
+  /* Neutros */
+  --cor-fundo: #FAF5EC;             /* areia clara */
+  --cor-superficie: #FFFFFF;
+  --cor-superficie-alt: #EFE5D3;
+  --cor-borda: #DDCFB6;
+
+  --cor-texto: #2B211B;             /* marrom quase preto */
+  --cor-texto-suave: #6E5F52;
+  --cor-texto-sobre-primaria: #FFFFFF;
+
+  /* Feedback */
+  --cor-sucesso: #5F7A4A;
+  --cor-alerta: #D9A441;
+  --cor-erro: #B3261E;
+  --cor-info: #1F5F73;
+
+  /* Extras */
+  --degrade-hero: linear-gradient(135deg, #8A3C1B 0%, #D9A441 100%);
+  --degrade-cachoeira: linear-gradient(135deg, #143F4E 0%, #5F7A4A 100%);
+  --degrade-por-do-sol: linear-gradient(135deg, #D9A441 0%, #C2410C 100%);
+  --sombra-card: 0 4px 16px rgba(138, 60, 27, 0.15);
+  --raio: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-primaria: #E07A4C;
+    --cor-primaria-escura: #B5532A;
+    --cor-primaria-clara: #3A211A;
+
+    --cor-secundaria: #E8B95A;
+    --cor-destaque: #8FAE74;
+    --cor-agua: #4C9DB5;
+
+    --cor-fundo: #1A1511;
+    --cor-superficie: #261E18;
+    --cor-superficie-alt: #32281F;
+    --cor-borda: #45382B;
+
+    --cor-texto: #F3EBDD;
+    --cor-texto-suave: #B5A693;
+
+    --sombra-card: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+body{
+    background-color: var(--cor-superficie-alt);
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: bisque;
+    background-color: var(--cor-destaque);
     padding: 10px;
 }
 .nav-bar{
