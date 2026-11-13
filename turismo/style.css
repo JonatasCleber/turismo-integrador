@@ -131,7 +131,21 @@ body:has(.hamburguer:hover) .painel,
     position: relative;
     top: 15px;
 }
-
+.btn-width{
+    width: 15%;
+}
+.btn{
+    padding: 10px;
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    border-radius: 5px;
+    border: solid 1px var(--cor-borda);
+    width: 100px;
+}
+.btn:hover{
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-texto-sobre-primaria);
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
