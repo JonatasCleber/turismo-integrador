@@ -191,3 +191,145 @@ a:hover{
     position: relative;
     top: 90px;
 }
+
+.menu svg {
+  width: 10px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+.pagina {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 10px;
+    padding: 20px 32px 41px 58px;}
+.esquerda {
+    display: grid;
+    align-content: start;}
+.tituloPagina {
+    color: rgb(44, 47, 44);
+    font-size: 2.1rem;
+    font-weight: 70;
+    line-height: 34px}
+.link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.80rem;
+    color: var(--cinza);
+    text-decoration: none;
+    color: rgb(72, 71, 69);}
+.listaDosCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 19px;
+    row-gap: 30px;}
+.card {
+    cursor: pointer;
+border-radius: 30px;
+padding: 20px;
+box-shadow: 5px 10px 12px rgba(114, 108, 108, 0.3);}
+.foto {
+    position: relative;
+    width: 100%;
+    height: 250px;}
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.28rem;
+    object-fit: cover;
+    display: block;}
+.selo {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    height: 32px;
+    padding: 0 12px;
+    line-height: 2.03rem;
+    background: #fdfafa;
+    border-radius: 1.07rem;
+    font-size: 0.96rem;
+    font-weight: 500;}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-top: 14px;}
+.titulo {
+    font-size: 1.1rem;
+    font-weight: 500;}
+.nota {
+    font-size: 1.0rem;
+    line-height: 1.7rem;
+    position: relative;
+    top: -4px;}
+
+.descricao {
+    font-size: 1.0rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+    color: var(--cinza);}
+.total {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 1.07rem;
+    font-weight: 500;}
+.parcela {
+    width: fit-content;
+    margin-top: 0.64rem;
+    padding: 0.16rem 0.32rem;
+    background: #f7d456;
+    border-radius: 0.32rem;
+    font-size: 0.75rem;
+    color: var(--cinza);}
+.direita {
+    position: sticky;
+    top: 2.25rem;
+    align-self: start;
+    margin-top: 1.18rem;
+    width: 100%;
+    aspect-ratio: 871/642;
+    background: var(--verde);
+    border-radius: 1.28rem;
+    overflow: hidden;}
+.vazio {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 1.18rem;
+    color: var(--cinza);}
+#painel img {
+    width: 100%;             
+    height: 440px;       
+    object-fit: cover;   
+    object-position: center;
+    border-radius: 12px;}
+.imgcard {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    width: 73%;
+    height: 87%;
+    border-radius: 1.28rem;
+    overflow: hidden;
+    cursor: pointer;
+    background: #ffffff;}
+.imgcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;}
+.lado {
+    left: 80.4%;}
+.botao {
+    position: absolute;
+    bottom: 1.28rem;
+    left: 1.28rem;
+    width: 8rem;
+    height: 2.46rem;
+    line-height: 2.46rem;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 1.23rem;
+    font-size: 0.96rem;
+    font-weight: bold;}
