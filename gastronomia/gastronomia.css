@@ -39,8 +39,7 @@ body {
 /*seção hero*/
 .hero{
     display: flex;
-    background:
-     url(Banner\ gastronômico\ com\ pizza\ e\ ervas.png);
+    background: url(Banner\ gastronômico\ com\ pizza\ e\ ervas.png);
     min-height: 100vh;
 }
 .hero div{
