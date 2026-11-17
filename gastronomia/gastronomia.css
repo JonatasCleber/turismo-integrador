@@ -36,7 +36,28 @@ body {
   background-color: var(--creme-fundo-principal);
 }
 
-
+/*seção hero*/
+.hero{
+    display: flex;
+    background:
+     url(Banner\ gastronômico\ com\ pizza\ e\ ervas.png);
+    min-height: 100vh;
+}
+.hero div{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.hero h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.hero p{
+    color: rgb(189, 175, 175);
+    font-size: 1.5rem;
+}
 /*===============
     SECTION 1
 ===============*/
