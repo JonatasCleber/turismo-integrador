@@ -12,7 +12,7 @@
   --cor-secundaria: #D9A441;        /* capim dourado / sol do cerrado */
   --cor-secundaria-escura: #B8851F;
 
-  --cor-destaque: #5F7A4A;          /* verde musgo / campo rupestre */
+  --cor-destaque: #3b5428;          /* verde musgo / campo rupestre */
   --cor-destaque-escura: #445A33;
 
   --cor-agua: #1F5F73;              /* poço azul / água profunda */
@@ -27,7 +27,7 @@
   --cor-superficie-alt: #EFE5D3;
   --cor-borda: #DDCFB6;
 
-  --cor-texto: #2B211B;             /* marrom quase preto */
+  --cor-texto: #F3EBDD;             /* marrom quase preto */
   --cor-texto-suave: #6E5F52;
   --cor-texto-sobre-primaria: #FFFFFF;
 
@@ -52,7 +52,7 @@
     --cor-primaria-clara: #3A211A;
 
     --cor-secundaria: #E8B95A;
-    --cor-destaque: #8FAE74;
+    --cor-destaque: #6c8458;
     --cor-agua: #4C9DB5;
 
     --cor-fundo: #1A1511;
@@ -73,7 +73,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cor-destaque);
+    background-color: #7eb45585;
+    backdrop-filter: blur(6px);
 }
 header {
     position: fixed;
@@ -92,7 +93,6 @@ header {
 }
 
 .hamburguer {
-    order: -1;
     height: 60px;
     width: 50px;
     background: transparent;
@@ -132,7 +132,9 @@ body:has(.hamburguer:hover) .painel,
     top: 15px;
 }
 .btn-width{
-    width: 15%;
+    width: 18%;
+    display: flex;
+    justify-content: space-around;
 }
 .btn{
     padding: 10px;
@@ -183,7 +185,7 @@ a:hover{
     position: relative;
     top: 120px;
     max-width: 400px;
-    color: var(--cor-fundo);
+    color: var(--cor-texto);
     left: 4%;
 }
 
