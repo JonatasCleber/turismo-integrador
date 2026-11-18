@@ -39,8 +39,11 @@ body {
 /*seção hero*/
 .hero{
     display: flex;
-    background: url(Banner\ gastronômico\ com\ pizza\ e\ ervas.png);
+    background: url(Fundo\ Gastronômico\ com\ Pizza\ e\ Manjericão.png);
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hero div{
     margin-left: 5%;
@@ -48,13 +51,13 @@ body {
 }
 .hero h1{
     font-size: 3rem;
-    color: white;
+    color: var(--cinza-letras);
     font-weight: 600;
     font-family: sans-serif;
     margin-bottom: 10px;
 }
 .hero p{
-    color: rgb(189, 175, 175);
+    color: var(--cinza-letras);
     font-size: 1.5rem;
 }
 /*===============
