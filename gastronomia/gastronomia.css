@@ -39,6 +39,7 @@ body {
 /*seção hero*/
 .hero{
     display: flex;
+    align-items: center;
     background: url(Fundo\ Gastronômico\ com\ Pizza\ e\ Manjericão.png);
     min-height: 100vh;
     background-size: cover;
