@@ -125,6 +125,7 @@ body {
 .categoria:hover {
     background-color: var(--creme-hover);
     transform: translateY(-2px);
+    z-index: 1;
 }
 
 /* =====================
