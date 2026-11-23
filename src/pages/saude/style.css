@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ---------- Marca ---------- */
+    --cor-primaria: #1C5FBF;
+    --cor-primaria-escura: #174C97;
+    --cor-destaque: #C9DDF8;
+
+    /* ---------- Fundos e superfícies ---------- */
+    --cor-fundo: #E9EFF9;
+    --cor-cabecalho: #F5F8FD;
+    --cor-superficie: #F5F8FD;
+    --cor-campo: #FFFFFF;
+    --cor-desabilitado: #DCE4F2;
+
+    /* ---------- Texto ---------- */
+    --cor-texto: #1F2634;
+    --cor-texto-suave: #4F5A6C;
+    --cor-texto-sobre-primaria: #FFFFFF;
+
+    /* ---------- Bordas e foco ---------- */
+    --cor-borda: #C2D1EA;
+    --cor-foco: #2F80ED;
+
+    /* ---------- Estados ---------- */
+    --cor-sucesso: #17794D;
+    --cor-aviso: #F2A33A;
+    --cor-erro: #D13438;
+}
+body {
+    background: linear-gradient(180deg, #F5F8FD 0%, #E9EFF9 50%, #C9DDF8 100%);
+    background-attachment: fixed;
+    color: var(--cor-texto)
+}header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(14, 28, 64, 0.55);
+    backdrop-filter: blur(6px);
+}
+
+nav {
+    background-color: transparent;
+    border: none;
+    padding: 12px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#logo {
+    width: 60px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+    border-bottom-color: var(--cor-aviso);
+}
+.hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    padding: 80px 6% 0;
+    background:
+        linear-gradient(90deg, rgba(14, 28, 64, 0.9) 0%, rgba(14, 28, 64, 0.5) 60%, rgba(14, 28, 64, 0.1) 100%),
+        radial-gradient(circle at 80% 28%, #F2A33A 0, transparent 34%),
+        radial-gradient(circle at 92% 78%, #2FD0B5 0, transparent 38%),
+        radial-gradient(circle at 62% 95%, #6AA6F8 0, transparent 45%),
+        #1C5FBF;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+}
+
+.etiqueta {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #FFD08A;
+    margin-bottom: 10px;
+}
+
+.apresentacao h1 {
+    font-size: 3.7rem;
+    line-height: 1.1;
+    font-weight: 900;
+    color: #fff;
+}
+
+.apresentacao p {
+    font-size: 1.3rem;
+    margin: 18px 0 28px;
+    color: #E6EEFB;
+}
+
+.botoes {
+    display: flex;
+}
+
+
+.botao-borda {
+    width: auto;
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-right: 14px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.botao-borda:hover {
+    background-color: #fff;
+    color: var(--cor-primaria);
+}
+
+.hero-equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.equipe-edit {
+    width: 83%;
+}
+
+.hero-equipe h2 {
+    font-family: 'inter', sans-serif;
+}
+
+.equipe {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.doutor-a {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cor-superficie);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    text-align: center;
+}
+
+.doutor-a img {
+    background-color: #F2A33A;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+#especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.especialidades-title {
+    font-family: 'inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--cor-texto);
+}
+
+ul {
+    display: grid;
+    /* Cria 4 colunas de tamanhos iguais */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Espaçamento de 20px entre os cards */
+    gap: 20px; 
+    padding: 20px;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+li h3{
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+li p{
+    font-size: 1.2rem;
+    color: var(--cor-texto-suave);
+}
+li:hover{
+    transform: translateY(-10px);
+}
+.agendamento {
+    width: 83%;
+    margin: 70px auto;
+}
+
+.agendamento-title {
+    font-family: 'inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+}
+
+.form-agendamento {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* bolinhas do radio ficam escondidas, quem aparece é o span */
+.opcao input,
+.opcao-doutor input {
+    display: none;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.horarios {
+    margin-top: 15px;
+}
+
+/* especialidades e horarios */
+.opcao span {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--cor-destaque);
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcao span:hover {
+    border-color: var(--cor-primaria);
+}
+
+.opcao input:checked+span {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-sobre-primaria);
+}
+
+.opcao input:disabled+span {
+    background-color: var(--cor-borda);
+    color: var(--cor-texto-suave);
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+/* cartao do doutor */
+.opcao-doutor span {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.opcao-doutor span:hover {
+    border-color: var(--cor-primaria);
+}
+
+.opcao-doutor input:checked+span {
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-destaque);
+}
+
+.opcao-doutor img {
+    background-color: var(--cor-primaria);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.opcao-doutor small {
+    color: var(--cor-texto-suave);
+}
+
+/* campos */
+.form-agendamento label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-agendamento .opcao,
+.form-agendamento .opcao-doutor {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+input[type="date"] {
+    width: auto;
+}
+
+.botao-confirmar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
