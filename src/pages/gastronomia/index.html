@@ -56,37 +56,36 @@
     </section>
     <section class="gastronomia" id="categorias">
       <h2>Explore por categoria</h2>
-
       <div class="categorias-grid">
-        <a href="" class="categoria">
+        <button onclick="filtrar('restaurantes')" class="categoria">
           <i class="fa-solid fa-utensils"></i>
           <span>Restaurantes</span>
-        </a>
+        </button>
 
-        <a href="" class="categoria">
+        <button onclick="filtrar('hamburguerias')" class="categoria">
           <i class="fa-solid fa-burger"></i>
           <span>Hamburguerias</span>
-        </a>
+        </button>
 
-        <a href="" class="categoria">
+        <button onclick="filtrar('cafes')" class="categoria" >
           <i class="fa-solid fa-mug-hot"></i>
           <span>Cafés</span>
-        </a>
+        </button>
 
-        <a href="" class="categoria">
+        <button onclick="filtrar('pizzarias')" class="categoria">
           <i class="fa-solid fa-pizza-slice"></i>
           <span>Pizzarias</span>
-        </a>
+        </button>
 
-        <a href="" class="categoria">
+        <button onclick="filtrar('lanchonetes')" class="categoria">
           <i class="fa-solid fa-bread-slice"></i>
           <span>Lanchonetes</span>
-        </a>
+        </button>
 
-        <a href="" class="categoria">
+        <button onclick="filtrar('todos')" class="categoria">
           <i class="fa-solid fa-location-dot"></i>
           <span>Ver todos</span>
-        </a>
+        </button>
       </div>
 
       <section class="lugares" id="lugares">
@@ -97,18 +96,18 @@
           Uma seleção de lugares para sua próxima experiência gastronômica.
         </p>
 
-        <div class="lugares-grid">
+        <div class="lugares-grid" data-tipo="restaurantes">
           <a href="#" class="lugar-card">
             <img src="/public/assets/images/restaurante.jpg" alt="Restaurante com mesas preparadas para jantar" />
             <h3>Restaurante</h3>
           </a>
 
-          <a href="#" class="lugar-card">
+          <a href="#" class="lugar-card" data-tipo="hamburguerias">
             <img src="/public/assets/images/hamburguer.jpg" alt="Hambúrguer artesanal com queijo e salada" />
             <h3>Hamburgueria</h3>
           </a>
 
-          <a href="#" class="lugar-card">
+          <a href="#" class="lugar-card" data-tipo="cafes">
             <img src="/public/assets/images/cafeteria.jpg" alt="Café servido em uma cafeteria aconchegante" />
             <h3>Café</h3>
           </a>
@@ -170,6 +169,7 @@
       Todos os direitos reservados.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
