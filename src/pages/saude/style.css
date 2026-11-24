@@ -124,7 +124,16 @@ nav a:hover {
     margin: 18px 0 28px;
     color: #E6EEFB;
 }
-
+.botao-agendar{
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
+    padding: 10px;
+}
+.botao-agendar:hover{
+    background-color: var(--cor-primaria-escura);
+}
 .botoes {
     display: flex;
 }
