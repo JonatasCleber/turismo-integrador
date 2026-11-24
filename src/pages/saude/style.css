@@ -192,7 +192,7 @@ nav a:hover {
     color: var(--cor-texto);
 }
 
-ul {
+.letreiro{
     display: grid;
     /* Cria 4 colunas de tamanhos iguais */
     grid-template-columns: repeat(4, 1fr); 
@@ -202,7 +202,7 @@ ul {
     list-style-type: none;
 }
 
-li {
+.lista {
     display: flex;
     background-color: var(--cor-destaque);
     color: var(--cor-texto);
@@ -226,4 +226,77 @@ li p{
 }
 li:hover{
     transform: translateY(-10px);
+}
+ .rodape {
+    background-color: blue;
+    color: white;
+    border-radius: 40px 40px 0 0;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rodape-marca {
+    max-width: 300px;
+}
+
+.rodape-logo {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.rodape h3 {
+    margin-bottom: 15px;
+}
+
+.rodape-navegacao {
+    display: block;
+    background-color: transparent;
+}
+
+.rodape ul {
+    list-style: none;
+}
+
+.rodape li {
+    margin-bottom: 10px;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
+    position: static;
+    margin: 0;
+    font-weight: normal;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes-sociais img {
+    width: 35px;
+    height: 35px;
+}
+
+.direitos-autorais {
+    border-top: 1px solid var(--cor-destaque);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
 }
