@@ -1,0 +1,440 @@
+.menu-btn {
+  transition:
+    left 0.4s ease,
+    background 0.3s ease,
+    transform 0.8s ease,
+    opacity 0.8s ease;
+}
+
+.menu-btn.active {
+  background: #091b3b;
+  box-shadow: 0 0 15px rgba(53, 239, 255, 0.2);
+}
+
+.menu-btn.active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+.sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar nav a {
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #00eaff;
+  background: rgba(53, 239, 255, 0.08);
+  border-left: 2px solid #00eaff;
+  padding-left: 20px;
+}
+
+.overlay-menu {
+  transition: 0.4s;
+}
+
+.overlay-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* =========================================
+   ANIMAÇÕES DO POSTE
+========================================= */
+
+.pole-cover,
+.crossbar-light,
+.lamp-globe {
+  transition: all 0.3s ease;
+}
+
+.crossbar-light:hover,
+.pole-cover:hover {
+  filter: brightness(1.25);
+}
+
+.lamp-globe:hover {
+  filter: brightness(2);
+}
+
+/* =========================================
+   ANIMAÇÕES DAS PLACAS
+========================================= */
+
+.plate {
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
+}
+
+.plate-wrapper:hover {
+  filter:
+    drop-shadow(0 0 5px var(--neon)) drop-shadow(0 0 22px var(--glow));
+
+  transition: filter 0.1s ease-in;
+}
+
+.plate-info {
+  transition: all 0.3s ease;
+}
+
+.plate-info:hover {
+  scale: 1.02;
+  transform: translateY(-5px);
+  filter: brightness(1.6);
+}
+
+.plate.pink:hover,
+.plate.red:hover {
+  transform: translateX(20px);
+  filter: brightness(1.35);
+}
+
+.plate.green:hover,
+.plate.blue:hover {
+  transform: translateX(-20px);
+  filter: brightness(1.35);
+}
+
+/* =========================================
+   ANIMAÇÃO DO BOTÃO PRINCIPAL
+========================================= */
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 234, 255, 0.3));
+  scale: 1.02;
+  transform: translateX(10px);
+}
+
+/* =========================================
+   ANIMAÇÕES DOS CARDS
+========================================= */
+
+.card {
+  transition: all 0.25s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  filter: drop-shadow(0 0 15px var(--glow));
+}
+
+.links a {
+  transition: all 0.2s;
+}
+
+.links a:hover {
+  background: var(--neon);
+  color: #04112a;
+}
+
+/* =========================================
+   ANIMAÇÕES DO CARROSSEL
+========================================= */
+
+#prev,
+#next {
+  transition: all 0.3s ease;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   ANIMAÇÃO DA EQUIPE
+========================================= */
+
+.team::before {
+  animation: shine 10s infinite;
+}
+
+@keyframes shine {
+
+  0%,
+  80% {
+    left: -100%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+/* =========================================
+   TELA DE INTRODUÇÃO
+========================================= */
+
+.intro-screen {
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.intro small {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* =========================================
+   OVERLAY DOS PROJETOS
+========================================= */
+
+.project-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(2, 8, 25, 0);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    background 0.8s ease,
+    opacity 0.5s ease,
+    visibility 0.8s;
+
+  pointer-events: none;
+}
+
+.project-overlay.active {
+  opacity: 1;
+  visibility: visible;
+
+  background: rgba(2, 8, 25, 0.92);
+
+  pointer-events: auto;
+}
+
+/* =========================================
+   PAINEL DOS PROJETOS
+========================================= */
+
+.project-panel {
+  position: relative;
+  isolation: isolate;
+
+  width: 230px;
+  min-height: 55px;
+
+  padding: 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: rgb(7, 26, 58);
+  border: 2px solid #35efff;
+  border-radius: 0;
+
+  box-shadow:
+    0 0 15px rgba(53, 239, 255, 0.3),
+    inset 0 0 20px rgba(53, 239, 255, 0.05);
+
+  transform: scale(1);
+  clip-path: inset(0 0 0 0);
+
+  transition:
+    width 0.85s cubic-bezier(.76, 0, .24, 1),
+    height 0.85s cubic-bezier(.76, 0, .24, 1),
+    min-height 0.85s cubic-bezier(.76, 0, .24, 1),
+    border-radius 0.85s ease,
+    clip-path 0.85s ease,
+    box-shadow 0.85s ease,
+    padding 0.85s ease;
+
+    z-index: 0;
+}
+
+.project-panel::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image: var(--project-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0.08;
+  z-index: -1;
+}
+
+/* PAINEL ABERTO */
+
+.project-overlay.active .project-panel {
+  width: min(850px, 85vw);
+  min-height: min(600px, 75vh);
+
+  padding: 65px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 30px rgba(53, 239, 255, 0.2),
+    0 0 100px rgba(0, 234, 255, 0.08),
+    inset 0 0 30px rgba(53, 239, 255, 0.06);
+}
+
+/* =========================================
+   CONTEÚDO DO PAINEL
+========================================= */
+
+.project-number {
+  color: #35efff;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition: all 0.5s ease 0.5s;
+}
+
+.project-panel h2 {
+  color: white;
+
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+
+  margin: 20px 0;
+
+  opacity: 0;
+  transform: translateY(25px);
+
+  transition: all 0.6s ease 0.6s;
+}
+
+.project-panel p {
+  color: #b9c7e6;
+
+  max-width: 550px;
+  font-size: 17px;
+  line-height: 1.8;
+
+  opacity: 0;
+  transform: translateY(25px);
+
+  transition: all 0.6s ease 0.7s;
+}
+
+.project-link {
+  width: fit-content;
+  margin-top: 35px;
+
+  color: #35efff;
+  text-decoration: none;
+  font-weight: bold;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.5s ease 0.8s,
+    transform 0.5s ease 0.8s;
+}
+
+/* =========================================
+   REVELAÇÃO DO TEXTO
+========================================= */
+
+.project-overlay.active .project-number,
+.project-overlay.active .project-panel h2,
+.project-overlay.active .project-panel p,
+.project-overlay.active .project-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================
+   BOTÃO FECHAR
+========================================= */
+
+.project-close {
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #ff3535;
+  border-radius: 50%;
+
+  background: transparent;
+  color: #35efff;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease 0.8s;
+}
+
+.project-overlay.active .project-close {
+  opacity: 1;
+}
+
+.project-close:hover {
+  background: #ff3535;
+  color: #f7f8f9;
+}
+
+/* =========================================
+   CORES DOS PROJETOS
+========================================= */
+
+.project-panel.pink {
+  border-color: #ff00e6;
+  box-shadow: 0 0 30px rgba(255, 0, 230, 0.2);
+}
+
+.project-panel.green {
+  border-color: #00ff35;
+  box-shadow: 0 0 30px rgba(0, 255, 53, 0.2);
+}
+
+.project-panel.red {
+  border-color: #ff1717;
+  box-shadow: 0 0 30px rgba(255, 23, 23, 0.2);
+}
+
+.project-panel.blue {
+  border-color: #00eaff;
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.2);
+}
