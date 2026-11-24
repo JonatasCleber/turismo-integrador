@@ -3,19 +3,20 @@ PALETA DE CORES
 =================*/
 
 :root {
-    --creme-fundo-principal: #e7c9a9;
-    --dourado-detalhes: #d8b879;
+--creme-fundo-principal: #ede7d1;
+    --dourado-detalhes: #f6d6c7;
     --branco-cards: #ffffff;
     --terracota-botoes: #c66b45;
-    --verde-escuro-cabecalho: #283b2d;
+    --verde-escuro-cabecalho: #4b1912;
 
     /* Cores complementares */
     --verde-claro-letras: #71805a;
-    --cinza-letras: #202020;
+    --cinza-letras: #f6d6c7;
     --creme-claro: #F7EBDD;
     --creme-hover: #EBD6BF;
     --marrom-texto: #80513F;
     --marrom-secundario: #806657;
+
 }
 
 /*==============
