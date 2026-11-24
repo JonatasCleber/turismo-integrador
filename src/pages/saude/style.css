@@ -35,7 +35,15 @@ body {
     background: linear-gradient(180deg, #F5F8FD 0%, #E9EFF9 50%, #C9DDF8 100%);
     background-attachment: fixed;
     color: var(--cor-texto)
-}header {
+}
+
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -260,6 +268,8 @@ li:hover{
 .rodape-navegacao {
     display: block;
     background-color: transparent;
+    padding: 0;
+    margin: 0;
 }
 
 .rodape ul {
@@ -284,7 +294,6 @@ li:hover{
 
 .redes-sociais {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }

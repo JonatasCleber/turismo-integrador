@@ -83,6 +83,13 @@
   text-decoration: underline;
 }
 
+.nav1 .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
 /*==============
   BOTÃO ENTRAR
 ==============*/

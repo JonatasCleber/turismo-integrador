@@ -23,8 +23,9 @@ PADRÕES GERAIS
 ==============*/
 
 * {
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -243,7 +244,6 @@ body {
 
 .redes-sociais {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
@@ -254,7 +254,7 @@ body {
 }
 
 .direitos-autorais {
-    border-top: 1px solid var(--cor-destaque);
+    border-top: 1px solid white;
     margin-top: 30px;
     padding-top: 20px;
     text-align: center;
