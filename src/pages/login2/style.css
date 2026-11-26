@@ -1,0 +1,263 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: rgb(63, 117, 225)
+}
+
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+    align-self: center;
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.hero h1 {
+    position: relative;
+    top: 80px;
+    font-size: 3.2rem;
+    max-width: 700px;
+    color: white;
+    left: 4%;
+}
+
+
+.hero p {
+    position: relative;
+    top: 120px;
+    max-width: 400px;
+    color: var(--cor-texto);
+    left: 4%;
+}
+
+
+
+
+
+
+.menu-login{
+    padding: 30px;
+    width: 480px;
+   height: 728px;
+    display: flex;
+    position: relative;
+
+
+    align-items: flex-start;
+    left: 504px;
+    color: rgb(74, 69, 76);
+   background-color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}  
+.tela-login{
+    width: 360px;
+    height: 300px;
+    align-items: center;
+    position: relative;
+}
+.textop1{
+    margin-bottom: 40px;
+    position: relative;
+  object-position: center;
+  display: flex;
+    left: 30px;
+    font-size: 2.1rem;
+}
+.paracor{
+    display: flex;
+    gap: 8px;
+    position: relative;
+}
+.asteristico{
+    position: relative;
+    top: -4px;
+   border: 1px solid oklch(75.328% 0.0034 15.848);
+}
+.Email{
+    position: relative;
+    left: 5px;
+    top: -5px;
+}
+.textop2{
+   
+font-size: 1.1rem;
+position: relative;
+margin-bottom: 10px;
+margin-top: 10px;}
+.paracor2{
+ display: flex;
+    width: 30px;
+    gap: 1px;
+   
+    position: relative;
+}
+.asteristico2{
+    top: 10px;
+    position: relative;
+    left: 2px;
+    border: 1px solid oklch(75.328% 0.0034 15.848);
+}
+.login{
+    width: 420px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid oklch(100% 0.00011 271.152);
+}
+.login:hover{
+    border: 1px solid oklch(17.304% 0.00002 271.152);
+}
+.login:active{
+    border: 1px solid oklch(86.248% 0.2619 140.002);
+}
+.login::placeholder{
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+
+
+
+.textop3{
+    position: relative;
+    left: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+
+.paracor3{
+ display: flex;
+    gap: 1px;
+    position: relative;
+}
+.asteristico3{
+    top: 10px;
+    position: relative;
+    left: 2px;
+    border: 1px solid oklch(75.328% 0.0034 15.848);
+}
+.senha{
+    width: 420px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid oklch(75.328% 0.0034 15.848);
+    border-bottom: 3px black;
+}
+.senha::placeholder{
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+.senha:hover{
+    border: 1px solid oklch(85.676% 0.231 139.418);
+}
+.senha:active{
+    border: 1px solid oklch(86.248% 0.2619 140.002);
+}
+
+
+.nomedeusuario{
+    width: 420px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid oklch(75.328% 0.0034 15.848);
+}
+.nomedeusuario:hover{
+    border: 1px solid oklch(85.676% 0.231 139.418);
+}
+.nomedeusuario:active{
+    border: 1px solid oklch(86.248% 0.2619 140.002);
+}
+.nomedeusuario::placeholder{
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+
+.paracor3{
+ display: flex;
+    gap: 0px;
+    position: relative;
+}
+.textop3{
+    margin-top: 10px;
+    width: 167px;
+}
+.asteristico3{
+     top: 10px;
+    color: oklch(0% 0 0);
+}
+.salvarlogin{
+    text-decoration: none;
+    position: relative;
+    color: oklch(62.298% 0.17466 258.708);
+
+
+}
+.loginEntra{
+    color: black;
+    background-color: oklch(100% 0.00011 271.152);;
+    padding: 10px;
+    border-radius: 10px;
+    width: 420px;
+    height: 45px;
+    margin-top: 20px;
+   border: 1px solid oklch(75.483% 0.00112 12.953);
+}
+
+
+.calendario{
+    width: 200px;
+    height: 100px;
+    display: flex;
+}
+select{
+   
+}
+
+
+.data{
+    width: 110px;
+    height: 39px;
+    border-radius: 10px;
+}
+.menudasdatas{
+
+
+}
