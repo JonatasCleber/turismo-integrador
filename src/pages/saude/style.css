@@ -273,8 +273,10 @@ li:hover{
     transform: translateY(-10px);
 }
 
+
+/*principais escolhas */
 .principais-escolhas {
-    background: linear-gradient(#d8c9b9, #f5efe8);
+    background: var(--cor-destaque);
     padding: 80px 8%;
     position: relative;
     overflow: hidden;
@@ -311,7 +313,7 @@ li:hover{
 }
 
 .mais-vistos p {
-    color: #8b7663;
+    color: var(--cor-texto);
     font-size: 12px;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -331,7 +333,7 @@ li:hover{
 
 .mais-vistos span {
     display: block;
-    color: #76695e;
+    color: var(--cor-texto);
     font-size: 16px;
     line-height: 1.6;
     margin-top: 25px;
@@ -356,7 +358,7 @@ li:hover{
 
 
 .numero {
-    color: #a99888;
+    color: var(--cor-texto);
     font-size: 14px;
     width: 40px;
     border-radius: 10px;
@@ -375,13 +377,13 @@ li:hover{
 }
 
 .nome-servico span {
-    color: #8b7663;
+    color: var(--cor-texto);
     font-size: 13px;
 }
 
 
 .info-servico {
-    color: #76695e;
+    color: var(--cor-texto);
     font-size: 14px;
 }
 
@@ -405,7 +407,7 @@ li:hover{
 .servico:hover {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #f7ede3;
+    background-color: var(--cor-fundo);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
