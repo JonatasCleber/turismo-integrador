@@ -154,7 +154,7 @@ body {
     width: 200px;
     transform: translateX(-150%);
     transition: transform 0.65s ease;
-    background-color: rgb(39, 39, 180);
+    background-color: var(--cor-primaria-escura);
     color: var(--cor-texto-sobre-primaria);
     position: fixed;
     z-index: 1000;
@@ -250,27 +250,8 @@ body:has(.hamburguer:hover) .painel,
 .botao-agendar:hover{
     background-color: var(--cor-primaria-escura);
 }
-.botoes {
-    display: flex;
-}
 
 
-.botao-borda {
-    width: auto;
-    padding: 16px 30px;
-    border-radius: 10px;
-    font-weight: 700;
-    margin-right: 14px;
-    cursor: pointer;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.botao-borda:hover {
-    background-color: #fff;
-    color: var(--cor-primaria);
-}
 
 .hero-equipe {
     display: flex;
