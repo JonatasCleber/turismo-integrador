@@ -5,285 +5,305 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <title>Bem Estar</title>
 </head>
 
 <body>
-   <header class="cima">
-    <img class="logo" src="logo" alt="logo">
+    <header>
 
-    <button class="hamburguer" type="button" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-</header>
+        <div class="painel">
+            <div class="links">
+                <a href="">Inicio</a>
+                <a href="">Beleza</a>
+                <a href="../saude/index.html">Saúde</a>
+                <a href="../bem-estar/Bem_estar.html">Bem estar</a>
+                <a href="../gastronomia/index.html">Gastronomia</a>
+                <a href="../turismo/index.html">Turismo</a>
+            </div>
+            <div class="account">
+                <a href="#cadastro">Cadastre-se</a>
+            </div>
+        </div>
+        <nav class="nav1">
+            <div class="lo-burguer">
+                <button class="hamburguer" type="button" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <img src="../../../public/assets/images/global-img/logo.png" alt="logo" class="logo" />
+            </div>
 
-<div class="painel">
-    <nav class="nav1">
-        <a href="#beleza">Beleza</a>
-        <a href="#saude">Saúde</a>
-        <a href="#bem_estar">Bem-Estar</a>
-        <a href="#gastronomia">Gastronomia</a>
-        <a href="#turismo">Turismo</a>
-    </nav>
-    <div class="user">
-    <button class="botao1"><img src="assets/img/conta.png" alt="conta"> 
-        <p>Conta</p>
-    </button>
-    </div>
-</div>
+            <div class="pesquisa">
+
+                <input type="search" placeholder="Pesquisar" />
+                <button type="button">&#8981;</button>
+            </div>
+
+            <a href="" class="btnEntrar">Entrar</a>
+
+        </nav>
+
+    </header>
 
     <Section class="s1">
         <div class="d1">
             <h1 class="texto_pincipal">Tudo sobre seu Bem-Estar em um só lugar</h1>
-            <p>Tudo o que você precisa para cuidar de si, 
-                encontrar equilíbrio e transformar sua 
-                rotina em uma experiência mais leve, 
+            <p>Tudo o que você precisa para cuidar de si,
+                encontrar equilíbrio e transformar sua
+                rotina em uma experiência mais leve,
                 saudável e feliz.</p>
         </div>
     </Section>
+
     <section class="s2">
-        
-        <div>
-        <img class="planta-esquerda-cima" src="assets/img/esquerda.png" alt="planta">
-        <img class="planta-direita-cima" src="assets/img/direita.png" alt="planta">
+        <div class="categorias-grid">
+            <button onclick="filtrar('esportes')" class="categoria">
+                <i class="fa-solid fa-volleyball"></i>
+                <span>Esportes</span>
+            </button>
+
+            <button onclick="filtrar('lazer')" class="categoria">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <span>Lazer</span>
+            </button>
+
+            <button onclick="filtrar('academia')" class="categoria">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>Academia</span>
+            </button>
+
+            <button onclick="filtrar('corpo-e-mente')" class="categoria">
+                <i class="fa-solid fa-brain"></i>
+                <span>Corpo e Mente</span>
+            </button>
+
+            <button onclick="filtrar('todos')" class="categoria">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Ver todos</span>
+            </button>
         </div>
-        <div class="botoes-nav">
-        <button class="botoes" type="button">
-            <img class="icon" src="assets/img/academia.png" alt="academia">
-            <p>ACADEMIA</p>
-        </button>
-        <button class="botoes" type="button">
-            <img class="icon" src="assets/img/lazer.png" alt="lazer">
-           <p>LAZER</p>
-        </button>
-        <button class="botoes" type="button">
-            <img class="icon" src="assets/img/esportes.png" alt="esportes">
-           <p>ESPORTES</p>
-        </button>
-        <button class="botoes" type="button">
-            <img class="icon" src="assets/img/corpoemente.png" alt="corpoEmente">
-            <p>CORPO E MENTE</p>
-        </button>
+    </section>
+
+    <section class="principais-escolhas">
+        <div class="mais-vistos">
+            <h2>
+                <i>Principais escolhas.</i>
+            </h2>
+
+            <span>
+                Lugares mais vistos pelos usuários.
+            </span>
         </div>
+
+
+        <div class="servicos">
+
+            <div>
+                <img class="planta-esquerda-cima" src="../../../public/assets/images/bem-estar-img/esquerda.png"
+                    alt="planta">
+                <img class="planta-direita-cima" src="../../../public/assets/images/bem-estar-img/direita.png"
+                    alt="planta">
+            </div>
+
+            <div class="servico">
+                <img class="numero" src="../../../public/assets/images/bem-estar-img/f22.jpg" alt="F2">
+
+                <div class="nome-servico">
+                    <h3>F2 Center Fitness</h3>
+                    <span>Academia</span>
+                </div>
+                <button>Ver mais →</button>
+            </div>
+
+
+            <div class="servico">
+                <img class="numero" src="../../../public/assets/images/bem-estar-img/iron.png" alt="iron">
+
+                <div class="nome-servico">
+                    <h3>Iron 10 Gym</h3>
+                    <span>Academia</span>
+                </div>
+                <button>Ver mais →</button>
+            </div>
+
+
+            <div class="servico">
+                <div class="numero">03</div>
+
+                <div class="nome-servico">
+                    <h3>SBA Sports</h3>
+                    <span>Esportes</span>
+                </div>
+                <button>Ver mais →</button>
+            </div>
+
+
+            <div class="servico">
+                <div class="numero">04</div>
+
+                <div class="nome-servico">
+                    <h3>Espaço Viva +</h3>
+                    <span>Esportes</span>
+                </div>
+                <button>Ver mais →</button>
+            </div>
+
+
+            <div class="servico">
+                <div class="numero">05</div>
+
+                <div class="nome-servico">
+                    <h3>Clube de campo Seabra</h3>
+                    <span>Lazer</span>
+                </div>
+                <button>Ver mais →</button>
+            </div>
+
+
+            <div class="servico">
+                <div class="numero">06</div>
+
+                <div class="nome-servico">
+                    <h3>Norma Martins Massoterapeuta</h3>
+                    <span>Corpo e mente</span>
+                </div>
+                <button>Ver mais →</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="rolagem">
         <div class="texto">
             <h1><i>Você em primeiro lugar!</i></h1>
             <h3>Porque cuidar do seu Bem estar é importante?</h3>
             <div class="carrosel">
-            <div class="carrosel-track">
+                <div class="carrosel-track">
 
-                <div class="conte">
-                    <h4><i>Previne doenças</i></h4>
-                    <br>
-                    <p>Manter hábitos saudáveis ajuda a reduzir o risco de doenças cardiovasculares,
-                     diabetes e outros problemas de saúde.</p>
+                    <div class="conte">
+                        <h4><i>Previne doenças</i></h4>
+                        <br>
+                        <p>Manter hábitos saudáveis ajuda a reduzir o risco de doenças cardiovasculares,
+                            diabetes e outros problemas de saúde.</p>
+                    </div>
+                    <div class="conte">
+                        <h4><i>Melhora a qualidade do sono</i></h4>
+                        <p>Atividades físicas e momentos de relaxamento contribuem
+                            para noites de sono melhores e mais reparadoras.</p>
+                    </div>
+                    <div class="conte">
+                        <h4><i>Reduz o estresse e a ansiedade</i></h4>
+                        <p>Ter momentos de lazer e autocuidado ajuda a aliviar as tensões
+                            e melhorar o equilíbrio emocional.</p>
+                    </div>
+                    <div class="conte">
+                        <h4><i>Fortalece o corpo e a imunidade</i></h4>
+                        <p>Movimentar-se regularmente melhora o condicionamento físico e contribui
+                            para o bom funcionamento do organismo.</p>
+                    </div>
+                    <div class="conte">
+                        <h4><i>Melhora o humor e a autoestima</i></h4>
+                        <p>Cuidar de si mesmo favorece a autoconfiança, o bem-estar emocional
+                            e a satisfação pessoal.</p>
+                    </div>
+                    <div class="conte">
+                        <h4><i>Aumenta a disposição no dia a dia</i></h4>
+                        <p>Uma rotina que inclui movimento, descanso e lazer ajuda a ter mais energia
+                            para as atividades cotidianas.</p>
+                    </div>
                 </div>
-                <div class="conte">
-                    <h4><i>Melhora a qualidade do sono</i></h4>
-                    <p>Atividades físicas e momentos de relaxamento contribuem
-                         para noites de sono melhores e mais reparadoras.</p>
-                </div>
-                <div class="conte">
-                    <h4><i>Reduz o estresse e a ansiedade</i></h4>
-                    <p>Ter momentos de lazer e autocuidado ajuda a aliviar as tensões
-                         e melhorar o equilíbrio emocional.</p>
-                </div>
-                <div class="conte">
-                    <h4><i>Fortalece o corpo e a imunidade</i></h4>
-                    <p>Movimentar-se regularmente melhora o condicionamento físico e contribui
-                         para o bom funcionamento do organismo.</p>
-                </div>
-                 <div class="conte">
-                    <h4><i>Melhora o humor e a autoestima</i></h4>
-                    <p>Cuidar de si mesmo favorece a autoconfiança, o bem-estar emocional
-                         e a satisfação pessoal.</p>
-                </div>
-                 <div class="conte">
-                    <h4><i>Aumenta a disposição no dia a dia</i></h4>
-                    <p>Uma rotina que inclui movimento, descanso e lazer ajuda a ter mais energia
-                         para as atividades cotidianas.</p>
-                </div>
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
             </div>
-            <button id="prev">&#10094;</button>
-            <button id="next">&#10095;</button>
-        </div>
-        <div class="texto2">
-            <p>Separar um tempo para você não é luxo, é uma necessidade. 
-                Cuidar do corpo e da mente traz benefícios que refletem em todas 
-                as áreas da sua vida.</p>
-        </div>
-        
     </section>
-
-<section class="principais-escolhas">
-    <img class="planta-esquerda-baixo" src="assets/img/baixo esquerda.png" alt="planta">
-    <img class="planta-direita-baixo" src="assets/img/baixo direita.png" alt="planta">
-    <div class="mais-vistos">
-        <h2>
-           <i>Principais escolhas.</i>
-        </h2>
-
-        <span>
-            Lugares mais vistos pelos usuários.
-        </span>
-    </div>
-
-
-    <div class="servicos">
-
-        <div class="servico">
-            <img class="numero" src="assets/img/f22.jpg" alt="F2">
-
-            <div class="nome-servico">
-                <h3>F2 Center Fitness</h3>
-                <span>Academia</span>
-            </div>
-            <button>Ver mais →</button>
-        </div>
-
-
-        <div class="servico">
-            <img class="numero" src="assets/img/iron.png" alt="iron">
-
-            <div class="nome-servico">
-                <h3>Iron 10 Gym</h3>
-                <span>Academia</span>
-            </div>
-            <button>Ver mais →</button>
-        </div>
-
-
-        <div class="servico">
-            <div class="numero">03</div>
-
-            <div class="nome-servico">
-                <h3>SBA Sports</h3>
-                <span>Esportes</span>
-            </div>
-            <button>Ver mais →</button>
-        </div>
-
-
-        <div class="servico">
-            <div class="numero">04</div>
-
-            <div class="nome-servico">
-                <h3>Espaço Viva +</h3>
-                <span>Esportes</span>
-            </div>
-            <button>Ver mais →</button>
-        </div>
-
-
-        <div class="servico">
-            <div class="numero">05</div>
-
-            <div class="nome-servico">
-                <h3>Clube de campo Seabra</h3>
-                <span>Lazer</span>
-            </div>
-            <button>Ver mais →</button>
-        </div>
-
-
-        <div class="servico">
-            <div class="numero">06</div>
-
-            <div class="nome-servico">
-                <h3>Norma Martins Massoterapeuta</h3>
-                <span>Corpo e mente</span>
-            </div>
-            <button>Ver mais →</button>
-        </div>
-
-    </div>
-</section>
 
 
     <section class="como-funciona" id="sobre">
-    <div class="cf-titulo">
-        <h2><i>Como funciona.</i></h2>
-        <span>Em três passos simples você encontra o lugar ideal para cuidar de si.</span>
-    </div>
-
-    <div class="cf-passos">
-        <div class="cf-card">
-            <div class="cf-numero">1</div>
-            <h3>Escolha a categoria</h3>
-            <p>Academia, lazer, esportes ou corpo e mente. Selecione o que combina com o seu momento.</p>
+        <div class="cf-titulo">
+            <h2><i>Como funciona.</i></h2>
+            <span>Em três passos simples você encontra o lugar ideal para cuidar de si.</span>
         </div>
 
-        <div class="cf-card">
-            <div class="cf-numero">2</div>
-            <h3>Explore os lugares</h3>
-            <p>Veja as opções da sua cidade e descubra os espaços mais procurados pelos usuários.</p>
+        <div class="cf-passos">
+            <div class="cf-card">
+                <div class="cf-numero">1</div>
+                <h3>Escolha a categoria</h3>
+                <p>Academia, lazer, esportes ou corpo e mente. Selecione o que combina com o seu momento.</p>
+            </div>
+
+            <div class="cf-card">
+                <div class="cf-numero">2</div>
+                <h3>Explore os lugares</h3>
+                <p>Veja as opções da sua cidade e descubra os espaços mais procurados pelos usuários.</p>
+            </div>
+
+            <div class="cf-card">
+                <div class="cf-numero">3</div>
+                <h3>Entre em contato</h3>
+                <p>Clique em "Ver mais", fale direto com o local e comece a cuidar do seu bem-estar.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+
+            <section class="rodape-marca">
+                <img src="../../../public/assets/images/global-img/logo.png" alt="Logo Portal Mandacaru"
+                    class="rodape-logo">
+                <p>Descubra os melhores serviços da Chapada em um só lugar.</p>
+            </section>
+
+            <nav class="rodape-navegacao" aria-label="Categorias">
+                <h3>Categorias</h3>
+
+                <ul>
+                    <li><a href="#">Beleza</a></li>
+                    <li><a href="#">Bem-estar</a></li>
+                    <li><a href="#">Saúde</a></li>
+                    <li><a href="#">Gastronomia</a></li>
+                </ul>
+            </nav>
+
+            <nav class="rodape-navegacao" aria-label="Institucional">
+                <h3>Institucional</h3>
+
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Seja um parceiro</a></li>
+                </ul>
+            </nav>
+
+            <section class="rodape-redes">
+                <h3>Redes sociais</h3>
+
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/mandacaru_portal/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../public/assets/images/global-img/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.facebook.com/mandacaru_portal" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../public/assets/images/global-img/facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="https://wa.me/5577999999999" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../public/assets/images/global-img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </section>
+
         </div>
 
-        <div class="cf-card">
-            <div class="cf-numero">3</div>
-            <h3>Entre em contato</h3>
-            <p>Clique em "Ver mais", fale direto com o local e comece a cuidar do seu bem-estar.</p>
-        </div>
-    </div>
-</section>
+        <p class="direitos-autorais">
+            &copy; 2026 Portal Mandacarú.
+            Todos os direitos reservados.
+        </p>
+    </footer>
 
-<footer class="rodape">
-    <div class="rodape-conteudo">
-
-      <section class="rodape-marca">
-        <img src="../gastronomia/assets/img/logo.png" alt="Logo Portal Mandacaru" class="rodape-logo">
-        <p>Descubra os melhores serviços da Chapada em um só lugar.</p>
-      </section>
-
-      <nav class="rodape-navegacao" aria-label="Categorias">
-        <h3>Categorias</h3>
-
-        <ul>
-          <li><a href="#">Beleza</a></li>
-          <li><a href="#">Bem-estar</a></li>
-          <li><a href="#">Saúde</a></li>
-          <li><a href="#">Gastronomia</a></li>
-        </ul>
-      </nav>
-
-      <nav class="rodape-navegacao" aria-label="Institucional">
-        <h3>Institucional</h3>
-
-        <ul>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Seja um parceiro</a></li>
-        </ul>
-      </nav>
-
-      <section class="rodape-redes">
-        <h3>Redes sociais</h3>
-
-        <div class="redes-sociais">
-          <a href="https://www.instagram.com/mandacaru_portal/" target="_blank" rel="noopener noreferrer">
-            <img src="../gastronomia/assets/img/instagram.png" alt="Instagram">
-          </a>
-
-          <a href="https://www.facebook.com/mandacaru_portal" target="_blank" rel="noopener noreferrer">
-            <img src="../gastronomia/assets/img/facebook.png" alt="Facebook">
-          </a>
-
-          <a href="https://wa.me/5577999999999" target="_blank" rel="noopener noreferrer">
-            <img src="../gastronomia/assets/img/whatsapp.png" alt="WhatsApp">
-          </a>
-        </div>
-      </section>
-
-    </div>
-
-    <p class="direitos-autorais">
-      &copy; 2026 Portal Mandacarú.
-      Todos os direitos reservados.
-    </p>
-  </footer>
-
-<script src="src/script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 
 </html>

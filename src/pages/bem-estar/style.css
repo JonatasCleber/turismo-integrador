@@ -3,92 +3,218 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-   background-color: #d8c9b9;
+    background-color: #d8c9b9;
 }
 
 /* Navbar */
 
-.cima {
+/*=================
+  PALETA DE CORES NAVBAR
+=================*/
+
+:root {
+    --creme-fundo-principal: #f5efe4;
+    --dourado-detalhes: #d8b879;
+    --branco-cards: #ffffff;
+    --terracota-botoes: #c66b45;
+    --verde-claro-letras: #71805a;
+    --cinza-letras: #202020;
+}
+
+.pesquisa {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 25px;
-    background: linear-gradient(to right, rgba(0, 6, 6, 1) 15%, rgba(22, 43, 29, 1), rgba(74, 119, 74, 1));
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    border-bottom: solid 1.7px rgba(22, 43, 29, 1);
+    padding: 10px;
+    gap: 15px;
+}
+
+.pesquisa input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(216, 184, 121, 0.25);
+    color: var(--branco-cards);
+    outline: none;
+    width: 60vh;
+}
+
+.pesquisa input::placeholder {
+    color: var(--dourado-detalhes);
+}
+
+.pesquisa input:focus {
+    outline: 1px solid var(--dourado-detalhes);
+}
+
+.pesquisa button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    color: var(--dourado-detalhes);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pesquisa button:hover {
+    color: var(--branco-cards);
 }
 
 .nav1 {
-    white-space: nowrap;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, rgba(0, 6, 6, 1) 15%, rgba(22, 43, 29, 1), rgba(74, 119, 74, 1));
+    color: var(--dourado-detalhes);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
 }
 
-.logo{
-    width: 100px;
-    height: fit-content;
+.navTags a:hover {
+    color: #ffe0a3;
+    text-decoration: underline;
 }
-.botao1 {
-    background: transparent;
-    padding: 7px 20px;
-    border: none;
-    margin-top: 8px;
-    cursor: pointer;
+
+.nav1 .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.btnEntrar {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--branco-cards);
+    background-color: var(--terracota-botoes);
+    transition: 0.2s;
+}
+
+.btnEntrar:hover {
+    background-color: #a94f30;
+}
+
+.lo-burguer {
     display: flex;
-    color: white;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
 }
 
-.botao1 p {
-    margin-top: 7px;
-    font-size: 1.1rem;
+/*==============
+  PAINEL LATERAL
+==============*/
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 200px;
+    transform: translateX(-150%);
+    transition: transform 0.65s ease;
+    background: linear-gradient(to bottom, rgba(0, 6, 6, 1) 15%, rgba(22, 43, 29, 1), rgba(74, 119, 74, 1));
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
 }
 
-.botao1 img {
-    width: 35px;
-    filter: invert(100%);
-    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.596);
-    border-radius: 50%;
+.links {
+    display: flex;
+    flex-direction: column;
 }
 
-.user {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
-    width: 110px;
-    height: 50px;
-    border-radius: 40px;
-}
-
-.user:hover {
-    transform: scale(1);
-    background-color: #121f1b;
-}
-
-.nav1 a{
+.links a {
     text-decoration: none;
-    color: rgb(234, 223, 204);
-    font-size: 1.2rem;
+    padding: 17px 28px;
+    font-weight: 600;
+    color: #f5efe8;
     position: relative;
-    top: 100px;
+    top: 170px;
+    border-bottom: solid 0.1px rgba(255, 255, 255, 0.082);
 }
-.nav1 a:hover{
-    color: #ffffff;
-    transform: scale(1.05);
-    text-shadow: 0 4px 5px rgba(0, 0, 0, 1)
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-left: solid 2px white;
+    color: var(--dourado-detalhes);
+}
+
+.account {
+    position: relative;
+    top: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.account a {
+    display: block;
+    padding: 13px 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: #f5efe8;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.account a:hover {
+    background: linear-gradient(135deg, rgba(74, 119, 74, 1), rgba(22, 43, 29, 1));
+    border-color: var(--dourado-detalhes);
+    color: var(--dourado-detalhes);
+    transform: translateY(-2px);
+}
+
+.hamburguer {
+    height: 60px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.hamburguer span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: rgb(234, 223, 204);
+}
+
+.hamburguer:hover span {
+    background: #ffffff;
+}
+
+body:has(.hamburguer:hover) .painel,
+.painel:hover {
+    transform: translateX(0);
 }
 
 /* Section 1 */
 
 .s1 {
     padding: 80px 70px;
-    background-image: url(assets/img/fundo.png);
+    background-image: url(../../../public/assets/images/bem-estar-img/fundo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -120,10 +246,10 @@ body {
 /* Section 2 */
 
 .s2 {
- padding: 20px 10px;
-  background: linear-gradient(#f5efe8, #d8c9b9);
-  position: relative;
-  overflow: hidden;
+    padding: 20px 10px;
+    background: linear-gradient(#f5efe8, #d8c9b9);
+    position: relative;
+    overflow: hidden;
 }
 
 .icon {
@@ -134,60 +260,80 @@ body {
     filter: invert(100%);
     opacity: 70%;
 }
-.planta-esquerda-cima, .planta-direita-cima {
-  width: 450px;
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-  pointer-events: none; 
-  opacity: 0.3;
+
+.planta-esquerda-cima,
+.planta-direita-cima {
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.09;
 }
 
 .planta-direita-cima {
     right: 0;
 }
 
-.botoes-nav button {
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.categorias-grid button {
+    grid-column: span 2;
+}
+
+.categorias-grid button:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.categorias-grid button:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    min-height: 60px;
+    padding: 8px;
+
+    background-color: #264138;
+    color: #f5efe8;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid;
+    transition: 0.2s;
     cursor: pointer;
 }
 
-.botoes-nav button:hover {
-    border: solid 1px #264137;
-    background: linear-gradient(to right, rgba(22, 43, 29, 1) 85%, rgba(74, 119, 74, 1));
+.categoria i {
+    font-size: 20px;
 }
 
-.botoes-nav {
-    display: flex;
-    gap: 10px;
-}
-.botoes-nav,
-.texto {
-  position: relative;
-  z-index: 1;
+.categoria span {
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.botoes-nav p {
-    position: relative;
-    bottom: 23px;
-    color: #ffffff;
-    font-family: monospace;
+.categoria:hover {
+    background-color: #3b6456;
+    transform: translateY(-2px);
+    z-index: 1;
 }
 
-.botoes {
-    display: flex;
-    border-radius: 10px;
-    border: solid 1px black;
-    background-color: #1a2c26;
-    color: rgb(234, 223, 204);
-    flex-direction: column;
-    width: 900px;
-    height: 50px;
-}
 .texto {
     padding: 150px 40px;
     display: flex;
     flex-direction: column;
 }
+
 .texto h1 {
     text-align: center;
     font-size: 55px;
@@ -228,6 +374,10 @@ body {
 
 /* Carrossel */
 
+.rolagem {
+    background: linear-gradient(#f5efe8, #d8c9b9);
+}
+
 .carrosel {
     position: relative;
     overflow: hidden;
@@ -241,8 +391,6 @@ body {
     gap: 30px;
     transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
-
-/* Card em formato de folha */
 
 .conte {
     min-width: 350px;
@@ -279,7 +427,8 @@ body {
 
 /* Botões */
 
-#prev, #next {
+#prev,
+#next {
     position: absolute;
     top: 90%;
     transform: translateY(-50%);
@@ -301,7 +450,8 @@ body {
     right: 46%;
 }
 
-#prev:hover, #next:hover {
+#prev:hover,
+#next:hover {
     background-color: rgba(74, 119, 74, 1);
 }
 
@@ -446,7 +596,7 @@ body {
 /* Como funciona */
 
 .como-funciona {
-    background: linear-gradient(#f5efe8, #d8c9b9);
+    background: linear-gradient(#d8c9b9, #f5efe8);
     padding: 10px 8% 90px;
 }
 
@@ -525,62 +675,6 @@ body {
 
 /* painel lateral */
 
-.hamburguer {
-    order: -1;
-    height: 60px;
-    width: 50px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-}
-
-.hamburguer span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    background: rgb(234, 223, 204);
-}
-
-.hamburguer:hover span {
-    background: #ffffff;
-}
-
-.painel {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 280px;
-    height: calc(100vh - 60px);
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(0, 6, 6, 0.97), rgba(22, 43, 29, 0.97));
-    backdrop-filter: blur(5px);
-    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
-    border-right: solid 1.7px rgba(22, 43, 29, 1);
-    transform: translateX(-100%);
-    transition: transform 0.65s ease;
-    z-index: 10;
-}
-
-
-body:has(.hamburguer:hover) .painel,
-.painel:hover {
-    transform: translateX(0);
-}
-
-.painel .botao1 {
-    align-self: flex-start;
-    margin-top: 0;
-    padding: 7px 0;
-}
 
 /* footer */
 
