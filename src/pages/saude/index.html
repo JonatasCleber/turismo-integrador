@@ -52,29 +52,31 @@
                 </div>
             </section>
         </div>
+
+        <!-- sessão de especialidades com filtro parte clicavel -->
         <section id="especialidades">
             <div class="categorias-grid">
-                <button onclick="filtrar('restaurantes')" class="categoria">
+                <button onclick="filtrar('clinicaGeral')" class="categoria">
                     <i class="fa-solid fa-utensils"></i>
                     <span>Clinica Geral</span>
                 </button>
 
-                <button onclick="filtrar('hamburguerias')" class="categoria">
+                <button onclick="filtrar('pediatria')" class="categoria">
                     <i class="fa-solid fa-burger"></i>
                     <span>Pediatria</span>
                 </button>
 
-                <button onclick="filtrar('cafes')" class="categoria">
+                <button onclick="filtrar('fisioterpia')" class="categoria">
                     <i class="fa-solid fa-mug-hot"></i>
                     <span>Fisioteapia</span>
                 </button>
 
-                <button onclick="filtrar('pizzarias')" class="categoria">
+                <button onclick="filtrar('ginecologia')" class="categoria">
                     <i class="fa-solid fa-pizza-slice"></i>
                     <span>Ginecologia</span>
                 </button>
 
-                <button onclick="filtrar('lanchonetes')" class="categoria">
+                <button onclick="filtrar('Dermatologia')" class="categoria">
                     <i class="fa-solid fa-bread-slice"></i>
                     <span>Dermatologia</span>
                 </button>
@@ -85,7 +87,47 @@
                 </button>
             </div>
         </section>
+        <!-- quando clicar em uma opçao de especialidades, essa sessão tem efeito, oq tiver dentro de filtrar aparece oq ta dentro data-tipo -->
+        <section class="lugares" id="lugares">
 
+            <h2>Lugares para conhecer</h2>
+
+            <p>
+                Uma seleção de lugares para sua próxima experiência gastronômica.
+            </p>
+            
+            <div class="lugares-grid">
+
+                <!-- Clinicas Gerais -->
+                <a href="#" class="lugar-card" data-tipo="clinicaGeral">
+                    <img src="assets/img/restaurante.jpg" alt="Restaurante com mesas preparadas para jantar" />
+                    <h3>Clinica Geral</h3>
+                </a>
+
+                <!-- Lugares de pediatria -->
+                <a href="#" class="lugar-card" data-tipo="pediatria">
+                    <img src="assets/img/hamburgueria.jpg" alt="Hambúrguer artesanal com queijo e salada" />
+                    <h3>Pediatria</h3>
+                </a>
+
+                <!-- lugares de fisioterapia -->
+                <a href="#" class="lugar-card" data-tipo="fisioterapia">
+                    <img src="assets/img/pizzaria.jpg" alt="Café servido em uma cafeteria aconchegante" />
+                    <h3>Fisioterapia</h3>
+                </a>
+
+                <!-- lugares de ginecologia -->
+                <a href="#" class="lugar-card" data-tipo="ginecologia">
+                    <img src="assets/img/cafes.jpg" alt="Café servido em uma cafeteria aconchegante" />
+                    <h3>Ginecologia</h3>
+                </a>
+                
+                <!-- lugares de Dermatologia -->
+                <a href="#" class="lugar-card" data-tipo="Dermatologia">
+                    <img src="assets/img/lanchonete.jpg" alt="Café servido em uma cafeteria aconchegante" />
+                    <h3>Dermatologia</h3>
+            </div>
+        </section>
         <section class="principais-escolhas">
 
             <div class="mais-vistos">
@@ -196,32 +238,32 @@
 
         </section>
 
-         <section class="como-funciona" id="sobre">
-        <div class="cf-titulo">
-            <h2><i>Como funciona.</i></h2>
-            <span>Em três passos simples você encontra o lugar ideal para cuidar de si.</span>
-        </div>
-
-        <div class="cf-passos">
-            <div class="cf-card">
-                <div class="cf-numero">1</div>
-                <h3>Escolha a categoria</h3>
-                <p>Academia, lazer, esportes ou corpo e mente. Selecione o que combina com o seu momento.</p>
+        <section class="como-funciona" id="sobre">
+            <div class="cf-titulo">
+                <h2><i>Como funciona.</i></h2>
+                <span>Em três passos simples você encontra o lugar ideal para cuidar de si.</span>
             </div>
 
-            <div class="cf-card">
-                <div class="cf-numero">2</div>
-                <h3>Explore os lugares</h3>
-                <p>Veja as opções da sua cidade e descubra os espaços mais procurados pelos usuários.</p>
-            </div>
+            <div class="cf-passos">
+                <div class="cf-card">
+                    <div class="cf-numero">1</div>
+                    <h3>Escolha a categoria</h3>
+                    <p>Academia, lazer, esportes ou corpo e mente. Selecione o que combina com o seu momento.</p>
+                </div>
 
-            <div class="cf-card">
-                <div class="cf-numero">3</div>
-                <h3>Entre em contato</h3>
-                <p>Clique em "Ver mais", fale direto com o local e comece a cuidar do seu bem-estar.</p>
+                <div class="cf-card">
+                    <div class="cf-numero">2</div>
+                    <h3>Explore os lugares</h3>
+                    <p>Veja as opções da sua cidade e descubra os espaços mais procurados pelos usuários.</p>
+                </div>
+
+                <div class="cf-card">
+                    <div class="cf-numero">3</div>
+                    <h3>Entre em contato</h3>
+                    <p>Clique em "Ver mais", fale direto com o local e comece a cuidar do seu bem-estar.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
     <footer class="rodape">
         <div class="rodape-conteudo">
@@ -278,7 +320,7 @@
             Todos os direitos reservados.
         </p>
     </footer>
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
     <script src="../login2/Conta.js" defer></script>
 </body>
 
