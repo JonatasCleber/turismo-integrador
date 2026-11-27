@@ -3,7 +3,7 @@
     --dourado-detalhes: #d8b879;
     --branco-cards: #ffffff;
     --terracota-botoes: #c66b45;
-    --verde-escuro-cabecalho: #283b2d;
+    --verde-escuro-cabecalho: #5a3e2a;
     --verde-claro-letras: #71805a;
     --cinza-letras: #202020;
 }
@@ -159,10 +159,7 @@ body:has(.hamburguer:hover) .painel,
 .hero {
     display: flex;
     align-items: center;
-    background: linear-gradient(to right,
-            rgba(40, 59, 45, 0.788) 20%,
-            rgba(255, 255, 255, 0.2)),
-        url(assets/img/fundo.png);
+    background-image: url(../../../public/assets/images/turismo-img/fundo.png);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -171,7 +168,7 @@ body:has(.hamburguer:hover) .painel,
 
 .titulo {
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .titulo h1 {
@@ -179,11 +176,14 @@ body:has(.hamburguer:hover) .painel,
     max-width: 550px;
     text-transform: uppercase;
     color: white;
+
 }
 
 .titulo p {
     color: var(--creme-fundo-principal);
-    font-size: 1.5rem;
+    font-size: 1.0rem;
+    max-width: 500px;
+    margin-top: 20px;
 }
 
 .categorias-grid {
