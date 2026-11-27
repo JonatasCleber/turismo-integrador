@@ -69,13 +69,14 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: linear-gradient(to right, rgba(0, 6, 6, 1) 15%, rgba(22, 43, 29, 1), rgba(74, 119, 74, 1));
+    background: linear-gradient(to right, rgba(0, 6, 6, 0.9) 15%, rgba(22, 43, 29, 0.9), rgba(74, 119, 74, 0.9));
     color: var(--dourado-detalhes);
     justify-content: space-between;
     position: fixed;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 .navTags a:hover {
@@ -153,7 +154,7 @@ body {
 
 .account {
     position: relative;
-    top: 250px;
+    top: 30%;
     padding: 20px;
     text-align: center;
 }
