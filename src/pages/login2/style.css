@@ -1,19 +1,16 @@
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-
-
-
 body {
-    background-color: rgb(63, 117, 225)
+background: linear-gradient(
+  135deg, 
+  rgb(180, 217, 142), 
+  rgb(36, 68, 13)
+);
+
 }
-
-
 .logo {
     width: 150px;
     height: auto;
@@ -24,25 +21,17 @@ body {
     left: 40px;
     top: 40px;
 }
-
-
-
-
 header {
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
-
-
-
-
-.hero {
-    width: 100%;
+.hero{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
-
-
 .hero h1 {
     position: relative;
     top: 80px;
@@ -51,8 +40,6 @@ header {
     color: white;
     left: 4%;
 }
-
-
 .hero p {
     position: relative;
     top: 120px;
@@ -66,7 +53,167 @@ header {
 
 
 
+/*login0*/
+.telamenu0{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login0{
+    width: 860px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: rgb(74, 69, 76);
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.menu-login0{
+    width: 460px;
+}
+
+.tela-login0{
+    display: flex;
+    flex-direction: column;
+}
+.primeirotexto{
+    height: 100px;
+}
+.textop0{
+    margin: 0 20 10px 0;
+    font-size: 2.1rem;
+    color: rgb(74, 69, 76);
+}
+.asteristico01{
+    color: oklch(0% 0 0);
+    height: 0;
+    border: none;
+}
+.paragrafodologin0{
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+}
+.organizatext0{
+    display: flex;
+}
+.Email0,
+.textop0{
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 5px;
+    
+}
+.asteristico01{
+    position: relative;
+    left: 5px;
+    color: oklch(31.918% 0.00283 16.601);
+}
+.asteristico02{
+    position: relative;
+    left: 3px;
+    color: oklch(31.918% 0.00283 16.601);
+}
+input.login0,
+.senha0{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+     font-size: 1.1rem;
+    border: 1px solid oklch(75.328% 0.0034 15.848);
+    box-shadow: 0 2px 12px oklch(89.143% 0.0001 271.152 / 0.076);
+    outline: none;
+}
+
+input.login0:hover,
+.senha0:hover{
+    border: 1px solid oklch(86.029% 0.19908 138.942);
+    color: black;
+}
+
+.checkpoint0{
+    margin: 12px 0;
+}
+
+.svg0{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salvarlogin0{
+    margin: 0;
+    font-size: 1.0rem;
+    font-weight: normal;
+    position: relative;
+    left: 30px;
+    color: oklch(33.191% 0.00977 260.764);
+}
+
+.senhaesquecida0{
+    color: oklch(62.298% 0.17466 258.708);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.Entrar0{
+    width: 100%;
+    height: 45px;
+     border-radius: 10px;
+    border:none;
+    box-shadow: 0 2px 12px oklch(89.143% 0.0001 271.152 / 0.076);
+    color: black;
+    cursor: pointer;
+    background-color: oklch(85.059% 0.24694 139.751);
+}
+
+.Entrar0:hover{
+    border: 1px solid oklch(34.558% 0.00138 15.654);
+    color: black;
+}
+.Entrar0:focus{
+    border: 1px solid oklch(34.558% 0.00138 15.654);
+    color: black;
+}
+.Entrar0:active{
+    border: 1px solid oklch(34.558% 0.00138 15.654);
+    color: black;
+}
+
+.site{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid oklch(35.717% 0.00136 15.584);
+}
+
+.cta{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.cta20{
+    margin-left: 5px;
+    color: oklch(62.298% 0.17466 258.708);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*Criar uma conta*/
 .menu-login{
+   
     padding: 30px;
     width: 480px;
    height: 728px;
@@ -75,7 +222,9 @@ header {
 
 
     align-items: flex-start;
-    left: 504px;
+  
+    color: rgb(74, 69, 76);
+   background-color: rgb(255, 255, 255);
     color: rgb(74, 69, 76);
    background-color: rgb(255, 255, 255);
     font-size: 1.1rem;
@@ -83,6 +232,7 @@ header {
     border-radius: 10px;
 }  
 .tela-login{
+     top: 20px;
     width: 360px;
     height: 300px;
     align-items: center;
@@ -91,10 +241,11 @@ header {
 .textop1{
     margin-bottom: 40px;
     position: relative;
-  object-position: center;
-  display: flex;
+    object-position: center;
+    display: flex;
     left: 30px;
     font-size: 2.1rem;
+    color: rgb(74, 69, 76);
 }
 .paracor{
     display: flex;
@@ -104,7 +255,7 @@ header {
 .asteristico{
     position: relative;
     top: -4px;
-   border: 1px solid oklch(75.328% 0.0034 15.848);
+   border:none;
 }
 .Email{
     position: relative;
@@ -128,16 +279,17 @@ margin-top: 10px;}
     top: 10px;
     position: relative;
     left: 2px;
-    border: 1px solid oklch(75.328% 0.0034 15.848);
+    border:none
 }
 .login{
     width: 420px;
     height: 40px;
     border-radius: 10px;
-    border: 1px solid oklch(100% 0.00011 271.152);
+   border: 1px solid oklch(75.328% 0.0034 15.848);
+    box-shadow: 0 2px 12px oklch(89.143% 0.0001 271.152 / 0.076);
 }
 .login:hover{
-    border: 1px solid oklch(17.304% 0.00002 271.152);
+    border: 1px solid oklch(86.029% 0.19908 138.942);
 }
 .login:active{
     border: 1px solid oklch(86.248% 0.2619 140.002);
@@ -146,6 +298,9 @@ margin-top: 10px;}
     position: relative;
     left: 10px;
     top: 0px;
+}
+.login:focus{
+     outline: none;
 }
 
 
@@ -168,14 +323,14 @@ margin-top: 10px;}
     top: 10px;
     position: relative;
     left: 2px;
-    border: 1px solid oklch(75.328% 0.0034 15.848);
+    border: none
 }
 .senha{
     width: 420px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid oklch(75.328% 0.0034 15.848);
-    border-bottom: 3px black;
+    box-shadow: 0 2px 12px oklch(89.143% 0.0001 271.152 / 0.076);
 }
 .senha::placeholder{
     position: relative;
@@ -183,10 +338,14 @@ margin-top: 10px;}
     top: 5px;
 }
 .senha:hover{
-    border: 1px solid oklch(85.676% 0.231 139.418);
+    border: 1px solid oklch(86.029% 0.19908 138.942);
 }
-.senha:active{
-    border: 1px solid oklch(86.248% 0.2619 140.002);
+.senha:after{
+    border: 1px solid oklch(86.029% 0.19908 138.942);
+
+}
+.senha:focus{
+     outline: none;
 }
 
 
@@ -196,12 +355,16 @@ margin-top: 10px;}
     border-radius: 10px;
     margin-bottom: 5px;
     border: 1px solid oklch(75.328% 0.0034 15.848);
+    box-shadow: 0 2px 12px oklch(89.143% 0.0001 271.152 / 0.076);
 }
 .nomedeusuario:hover{
-    border: 1px solid oklch(85.676% 0.231 139.418);
+    border: 1px solid oklch(88.074% 0.22222 139.217);
 }
 .nomedeusuario:active{
     border: 1px solid oklch(86.248% 0.2619 140.002);
+}
+.nomedeusuario{
+     outline: none;
 }
 .nomedeusuario::placeholder{
     position: relative;
@@ -222,42 +385,320 @@ margin-top: 10px;}
 .asteristico3{
      top: 10px;
     color: oklch(0% 0 0);
+    height: 0;
+    border: none;
 }
 .salvarlogin{
+    transform: translateY(20px);
+    display: flex;
     text-decoration: none;
     position: relative;
     color: oklch(62.298% 0.17466 258.708);
 
-
 }
 .loginEntra{
     color: black;
-    background-color: oklch(100% 0.00011 271.152);;
+    background-color: oklch(85.059% 0.24694 139.751);
     padding: 10px;
     border-radius: 10px;
     width: 420px;
     height: 45px;
     margin-top: 20px;
-   border: 1px solid oklch(75.483% 0.00112 12.953);
+   border: none;
+}
+.loginEntra:hover{
+    border: 1px solid oklch(35.046% 0.00276 16.496);
+}
+.loginEntra:active{
+    border: 1px solid oklch(35.046% 0.00276 16.496);
+}
+.loginEntra:focus{
+    border: 1px solid oklch(35.046% 0.00276 16.496);
+}
+
+.calendario {
+  display: flex;
+  gap: 12px;
+  font-family: system-ui, -apple-system, sans-serif;
+  align-items: flex-start;
 }
 
 
-.calendario{
-    width: 200px;
-    height: 100px;
-    display: flex;
-}
-select{
-   
-}
 
 
-.data{
-    width: 110px;
-    height: 39px;
-    border-radius: 10px;
+details {
+  position: relative;
+  user-select: none;
+}
+summary {
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 16px;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  border: 1px solid oklch(75.483% 0.00112 12.953);
+
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  min-width: 110px;
+  display: flex;
+  justify-content: space-between;
+  object-position: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 0px 10px oklch(89.143% 0.0001 271.152);
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "▼";
+  font-size: 10px;
+  color: oklch(84.579% 0.16251 86.925);
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary {
+  border-color: oklch(87.958% 0.24053 139.476);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+summary:hover {
+  background-color: #f9fafb;
+  border-color: oklch(86.029% 0.19908 138.942);
 }
 .menudasdatas{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid oklch(87.297% 0.21974 139.149 / 0.781);
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+   z-index: 50;
+}
 
 
+.menudodia
+.menudasdatas {
+    max-height: 112px;
+    gap: 4px;
+    width: 100px;
+    position: relative;
+    transform: translateX(20px);
+    overflow: auto;
+}
+.dia {
+  display: flex;
+  object-position: center;
+  justify-content: center;
+  height: 30px;
+  font-size: 13px;
+  color: oklch(37.537% 0.02864 232.885);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.menudomes .menudasdatas {
+    max-height: 112px;
+    width: 109px;
+
+    position: relative;
+    transform: translateX(16px);
+    overflow: auto;
+}
+
+.mes {
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.menudoano {
+    width: 112px;
+    max-height: 112px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    transform: translateX(13px);
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid oklch(87.297% 0.21974 139.149 / 0.781);
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+   z-index: 50;
+}
+.item-ano {
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.dia:hover,
+.mes:hover,
+.item-ano:hover {
+  background-color: oklch(84.579% 0.16251 86.925);
+  color: oklch(0% 0 0);
+  font-weight: 500;
+}
+
+
+.termosdeuso{
+    margin-top: 20px;
+}
+.textorecomendativo{
+    position: relative;
+    font-size: 1.0rem;
+   color: rgb(74, 69, 76);
+    margin: 35px 40px 0;
+    display: flex;
+    align-items: center;
+    left: 70px;
+    width: 190px;
+    height:80px;
+}
+
+
+/*Esqueci a Senha*/
+.turismoj{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.logoj{
+    width: 150px;
+}
+
+.heroj{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background: linear-gradient(
+  135deg, 
+  rgb(180, 217, 142), 
+  rgb(36, 68, 13)
+);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.telamenuj{
+    display: flex;
+}
+
+.loginj{
+    width: 460px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(74, 69, 76);
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.menu-loginj{
+    width: 100%;
+}
+
+.tela-loginj{
+    display: flex;
+    flex-direction: column;
+}
+
+.textop1j{
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: rgb(74, 69, 76);
+}
+
+.paragrafodologinj{
+    margin: 0 0 20px 0;
+    font-size: 1.3rem;
+}
+
+.Emailj{
+    margin: 20px 0 8px 0;
+    font-size: 1.3rem;
+}
+
+#emailj,
+#senhanovaj,
+#confirmarsenhaj{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: 1px solid oklch(75.328% 0.0034 15.848);
+    box-shadow: 0 2px 12px oklch(89.143% 0.0001 271.152 / 0.076);
+    outline: none;
+}
+
+#emailj:hover,
+#senhanovaj:hover,
+#confirmarsenhaj:hover{
+    border: 1px solid oklch(86.029% 0.19908 138.942);
+    color: black;
+}
+
+.Entrarj{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: oklch(85.059% 0.24694 139.751);
+    border: 1px solid oklch(75.87% 0.00428 122.173);
+    color: black;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Entrarj:hover{
+    border: 1px solid oklch(86.029% 0.19908 138.942);
+    color: black;
+}
+.Entrarj:hover{
+    border: 1px solid oklch(35.046% 0.00276 16.496);
+}
+.Entrarj:active{
+    border: 1px solid oklch(35.046% 0.00276 16.496);
+}
+.Entrarj:focus{
+    border: 1px solid oklch(35.046% 0.00276 16.496);
+}
+
+
+.ctaj{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.cta2j{
+    margin-left: 5px;
+    color: oklch(62.298% 0.17466 258.708);
+    text-decoration: none;
 }
