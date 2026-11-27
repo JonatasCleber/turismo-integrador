@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(to right, rgba(58, 2, 2, 0.788) 20%, rgba(255, 255, 255, 0.2)),
-        url(assets/img/fundo.png);
+        url(../../../public/assets/images/gastronomia-img/fundo.png);
     min-height: 80vh;
     background-size: cover;
     background-position: center;
