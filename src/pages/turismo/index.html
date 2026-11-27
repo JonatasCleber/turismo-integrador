@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
   <title>Turismo</title>
 </head>
@@ -48,39 +49,41 @@
     </section>
 
     <section id="filtro-turismo" class="filtro-turismo">
-      <h2 class="filtro-titulo">Explore a Chapada Diamantina</h2>
-      <ul class="letreiro">
-        <li class="lista">
-          <img src="assets/img/transporte.png" alt="">
-          <h3>Transportes</h3>
-        </li>
-        <li class="lista">
-          <img src="assets/img/hospedagem.png" alt="">
-          <h3>Hospedagem</h3>
 
-        </li>
-        <li class="lista">
-          <img src="assets/img/guias.png" alt="">
-          <h3>Guias Turísticos</h3>
 
-        </li>
-        <li class="lista">
-          <img src="assets/img/passeios.png" alt="">
-          <h3>Passeios e Roteiros</h3>
+      <h2>Explore por categoria</h2>
+      <div class="categorias-grid">
+        <button onclick="filtrar('restaurantes')" class="categoria">
+          <i class="fa-solid fa-bus"></i>
+          <span>Transportes</span>
+        </button>
 
-        </li>
-        <li class="lista">
-          <h3>Atrativos turísticos</h3>
-          <img src="assets/img/atrativos.png" alt="">
-          </h3>
+        <button onclick="filtrar('hamburguerias')" class="categoria">
+          <i class="fa-solid fa-hotel"></i>
+          <span>Hospedagem</span>
+        </button>
 
-        </li>
-        <li class="lista">
-          <h3>Aventura</h3>
-          <img src="assets/img/aventura.png" alt="">
-        </li>
+        <button onclick="filtrar('cafes')" class="categoria" >
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Guias Turísticos</span>
+        </button>
 
-      </ul>
+        <button onclick="filtrar('pizzarias')" class="categoria">
+          <i class="fa-solid fa-route"></i>
+          <span>Passeios e Roteiros</span>
+        </button>
+
+        <button onclick="filtrar('lanchonetes')" class="categoria">
+          <i class="fa-umbrella-beach"></i>
+          <span>Atrativos turísticos</span>
+        </button>
+
+        <button onclick="filtrar('todos')" class="categoria">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Ver todos</span>
+        </button>
+      </div>
+
     </section>
 
     <section class="principais-escolhas">
@@ -175,9 +178,9 @@
 
           <ul>
             <li><a href="#">Beleza</a></li>
-            <li><a href="#">Bem-estar</a></li>
-            <li><a href="#">Saúde</a></li>
-            <li><a href="#">Gastronomia</a></li>
+            <li><a href="../bem-estar/Bem_estar.html">Bem-estar</a></li>
+            <li><a href="../saude/index.html">Saúde</a></li>
+            <li><a href="../gastronomia/index.html">Gastronomia</a></li>
           </ul>
         </nav>
 
