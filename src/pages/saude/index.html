@@ -48,43 +48,46 @@
                     <h1>Sua consulta marcada em menos de 1 minuto.</h1>
                     <p>Horário marcado, sem fila e sem complicação. Escolha a especialidade, o profissional e pronto.
                     </p>
-                    
+
                 </div>
             </section>
         </div>
         <section id="especialidades">
-            <h2 class="especialidades-title">Especialidades</h2>
-            <ul class="letreiro">
-                <li class="lista">
-                    <h3>Clinica Geral</h3>
-                   
-                </li>
-                <li class="lista">
-                    <h3>Pediatria</h3>
-                  
-                </li>
-                <li class="lista">
-                    <h3>Cardiologia</h3>
-                   
-                </li>
-                <li class="lista">
-                    <h3>Dermatologia</h3>
-                    
-                </li>
-                <li class="lista">
-                    <h3>Ginecologia</h3>
-                   
-                </li>
-                <li class="lista">
-                    <h3>Ortopedia</h3>
-                    
-                </li>
-                
-            </ul>
+            <div class="categorias-grid">
+                <button onclick="filtrar('restaurantes')" class="categoria">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Clinica Geral</span>
+                </button>
+
+                <button onclick="filtrar('hamburguerias')" class="categoria">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>Pediatria</span>
+                </button>
+
+                <button onclick="filtrar('cafes')" class="categoria">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span>Fisioteapia</span>
+                </button>
+
+                <button onclick="filtrar('pizzarias')" class="categoria">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <span>Ginecologia</span>
+                </button>
+
+                <button onclick="filtrar('lanchonetes')" class="categoria">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <span>Dermatologia</span>
+                </button>
+
+                <button onclick="filtrar('todos')" class="categoria">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Ver todos</span>
+                </button>
+            </div>
         </section>
 
         <section class="principais-escolhas">
-            
+
             <div class="mais-vistos">
                 <h2>
                     <i>Principais escolhas.</i>
@@ -197,7 +200,8 @@
         <div class="rodape-conteudo">
 
             <section class="rodape-marca">
-                <img src="../../../public/assets/images/global-img/logo.png" alt="Logo Portal Mandacaru" class="rodape-logo">
+                <img src="../../../public/assets/images/global-img/logo.png" alt="Logo Portal Mandacaru"
+                    class="rodape-logo">
                 <p>Descubra os melhores serviços da Chapada em um só lugar.</p>
             </section>
 
