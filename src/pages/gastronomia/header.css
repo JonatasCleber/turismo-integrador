@@ -1,0 +1,175 @@
+/*=================
+  PALETA DE CORES
+=================*/
+
+:root {
+  --creme-fundo-principal: #f5efe4;
+  --dourado-detalhes: #d8b879;
+  --branco-cards: #ffffff;
+  --terracota-botoes: #c66b45;
+  --verde-escuro-cabecalho: #283b2d;
+  --verde-claro-letras: #71805a;
+  --cinza-letras: #202020;
+}
+
+/*==================
+  PADRÕES GERAIS
+==================*/
+
+
+/*=============
+  PESQUISA
+=============*/
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.pesquisa input {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(216, 184, 121, 0.25);
+  color: var(--branco-cards);
+  outline: none;
+  width: 60vh;
+}
+
+.pesquisa input::placeholder {
+  color: var(--dourado-detalhes);
+}
+
+.pesquisa input:focus {
+  outline: 1px solid var(--dourado-detalhes);
+}
+
+.pesquisa button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: var(--dourado-detalhes);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pesquisa button:hover {
+  color: var(--branco-cards);
+}
+
+/*=============
+  NAVEGAÇÃO
+=============*/
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--verde-escuro-cabecalho);
+  color: var(--dourado-detalhes);
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.navTags a:hover {
+  color: #ffe0a3;
+  text-decoration: underline;
+}
+
+.nav1 .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+/*==============
+  BOTÃO ENTRAR
+==============*/
+
+.btnEntrar {
+  margin-right: 10px;
+  display: inline-block;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--branco-cards);
+  background-color: var(--terracota-botoes);
+  transition: 0.2s;
+}
+
+.btnEntrar:hover {
+  background-color: #a94f30;
+}
+
+.lo-burguer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/*==============
+  PAINEL LATERAL
+==============*/
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    width: 200px;
+    transform: translateX(-150%);
+    transition: transform 0.65s ease;
+    background-color: var(--verde-escuro-cabecalho);
+    color: var(--dourado-detalhes);
+    position: fixed;
+    z-index: 1000;
+}
+
+.painel a {
+  text-decoration: none;
+  color: var(--dourado-detalhes);
+  transition: 0.2s;
+  position: relative;
+  top: 150px;
+  left: 20px;
+}
+
+.hamburguer {
+    height: 60px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.hamburguer span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: rgb(234, 223, 204);
+}
+
+.hamburguer:hover span {
+    background: #ffffff;
+}
+
+body:has(.hamburguer:hover) .painel,
+.painel:hover {
+    transform: translateX(0);
+}

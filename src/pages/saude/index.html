@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>projeto integrador</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="painel">
+            <a href="">Inicio</a>
+            <a href="">Beleza</a>
+            <a href="../saude/index.html">Saúde</a>
+            <a href="../bem-estar/Bem_estar.html">Bem estar</a>
+            <a href="../gastronomia/index.html">Gastronomia</a>
+            <a href="../turismo/index.html">Turismo</a>
+        </div>
+        <nav class="nav1">
+            <div class="lo-burguer">
+                <button class="hamburguer" type="button" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <img src="../../../public/assets/images/global-img/logo.png" alt="logo" class="logo" />
+            </div>
+
+            <div class="pesquisa">
+
+                <input type="search" placeholder="Pesquisar" />
+                <button type="button">&#8981;</button>
+            </div>
+
+            <a href="" class="btnEntrar">Entrar</a>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="corpo">
+            <section class="hero">
+                <div class="apresentacao">
+                    <span class="etiqueta">AGENDAMENTO ONLINE</span>
+                    <h1>Sua consulta marcada em menos de 1 minuto.</h1>
+                    <p>Horário marcado, sem fila e sem complicação. Escolha a especialidade, o profissional e pronto.
+                    </p>
+
+                </div>
+            </section>
+        </div>
+        <section id="especialidades">
+            <div class="categorias-grid">
+                <button onclick="filtrar('restaurantes')" class="categoria">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Clinica Geral</span>
+                </button>
+
+                <button onclick="filtrar('hamburguerias')" class="categoria">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>Pediatria</span>
+                </button>
+
+                <button onclick="filtrar('cafes')" class="categoria">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span>Fisioteapia</span>
+                </button>
+
+                <button onclick="filtrar('pizzarias')" class="categoria">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <span>Ginecologia</span>
+                </button>
+
+                <button onclick="filtrar('lanchonetes')" class="categoria">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <span>Dermatologia</span>
+                </button>
+
+                <button onclick="filtrar('todos')" class="categoria">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Ver todos</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="principais-escolhas">
+
+            <div class="mais-vistos">
+                <h2>
+                    <i>Principais escolhas.</i>
+                </h2>
+
+                <span>
+                    Clínicas mais vistas pelos usuários.
+                </span>
+            </div>
+
+
+            <div class="servicos">
+
+                <div class="servico">
+                    <img class="numero" src="assets/img/f22.jpg" alt="01">
+
+                    <div class="nome-servico">
+                        <h3>Clínica Santa Bárbara</h3>
+                        <span>Clinica Geral</span>
+                    </div>
+                    <button>Ver mais →</button>
+                </div>
+
+
+                <div class="servico">
+                    <img class="numero" src="assets/img/iron.png" alt="02">
+
+                    <div class="nome-servico">
+                        <h3>Clínica Meu Mundinho</h3>
+                        <span>Pediatria</span>
+                    </div>
+                    <button>Ver mais →</button>
+                </div>
+
+
+                <div class="servico">
+                    <div class="numero">03</div>
+
+                    <div class="nome-servico">
+                        <h3>VitalClin</h3>
+                        <span>psicologia</span>
+                    </div>
+                    <button>Ver mais →</button>
+                </div>
+
+
+                <div class="servico">
+                    <div class="numero">04</div>
+
+                    <div class="nome-servico">
+                        <h3>Clínica de Fisioterapia da Chapada</h3>
+                        <span>Fisioteapia</span>
+                    </div>
+                    <button>Ver mais →</button>
+                </div>
+
+
+                <div class="servico">
+                    <div class="numero">05</div>
+
+                    <div class="nome-servico">
+                        <h3>Clínica Mais Saúde</h3>
+                        <span>Ginecologia</span>
+                    </div>
+                    <button>Ver mais →</button>
+                </div>
+
+
+                <div class="servico">
+                    <div class="numero">06</div>
+
+                    <div class="nome-servico">
+                        <h3>Consultório Dr. Fabiano Félix Terra</h3>
+                        <span>Dermatologia</span>
+                    </div>
+                    <button>Ver mais →</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="hero-equipe">
+            <div class="equipe-edit">
+                <h2 class="especialidades-titulo">QUEM CUIDA DE VOCÊ</h2>
+                <p class="especialidades-descrição">Conheça nossos profissionais de saúde.</p>
+                <div class="equipe">
+                    <div class="doutor-a clinica">
+                        <img src="../../../public/assets/images/saude-img/doutorapaula.png" alt="perfil">
+                        <h3>Dra. Paula Reis</h3>
+                        <p>Clínica geral</p>
+                        <button class="botao-agendar">Agendar consulta</button>
+                    </div>
+                    <div class="doutor-a pediatria">
+                        <img src="../../../public/assets/images/saude-img/doutorahelena.png" alt="perfil">
+                        <h3>Dra. Helena Rocha</h3>
+                        <p>Pediatria</p>
+                        <button class="botao-agendar">Agendar consulta</button>
+                    </div>
+                    <div class="doutor-a ginecologia">
+                        <img src="../../../public/assets/images/saude-img/doutormarcos.png" alt="perfil">
+                        <h3>Dr. Marcos Lima</h3>
+                        <p>Ginecologia</p>
+                        <button class="botao-agendar">Agendar consulta</button>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+
+            <section class="rodape-marca">
+                <img src="../../../public/assets/images/global-img/logo.png" alt="Logo Portal Mandacaru"
+                    class="rodape-logo">
+                <p>Descubra os melhores serviços da Chapada em um só lugar.</p>
+            </section>
+
+            <nav class="rodape-navegacao" aria-label="Categorias">
+                <h3>Categorias</h3>
+
+                <ul>
+                    <li><a href="#">Beleza</a></li>
+                    <li><a href="#">Bem-estar</a></li>
+                    <li><a href="#">Saúde</a></li>
+                    <li><a href="#">Gastronomia</a></li>
+                </ul>
+            </nav>
+
+            <nav class="rodape-navegacao" aria-label="Institucional">
+                <h3>Institucional</h3>
+
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Seja um parceiro</a></li>
+                </ul>
+            </nav>
+
+            <section class="rodape-redes">
+                <h3>Redes sociais</h3>
+
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/mandacaru_portal/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../public/assets/images/global-img/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.facebook.com/mandacaru_portal" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../public/assets/images/global-img/facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="https://wa.me/5577999999999" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../public/assets/images/global-img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <p class="direitos-autorais">
+            &copy; 2026 Portal Mandacarú.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="../login2/Conta.js" defer></script>
+</body>
+
+</html>

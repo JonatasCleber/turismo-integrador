@@ -1,0 +1,283 @@
+/*=================
+PALETA DE CORES 
+=================*/
+
+:root {
+--creme-fundo-principal: #ede7d1;
+    --dourado-detalhes: #f6d6c7;
+    --branco-cards: #ffffff;
+    --terracota-botoes: #c66b45;
+    --verde-escuro-cabecalho: #4b1912;
+
+    /* Cores complementares */
+    --verde-claro-letras: #71805a;
+    --cinza-letras: #f6d6c7;
+    --creme-claro: #F7EBDD;
+    --creme-hover: #EBD6BF;
+    --marrom-texto: #80513F;
+    --marrom-secundario: #806657;
+
+}
+
+/*==============
+PADRÕES GERAIS 
+==============*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--creme-fundo-principal);
+}
+
+/*seção hero*/
+.hero{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(58, 2, 2, 0.788) 20%, rgba(255, 255, 255, 0.2)),
+        url(assets/img/fundo.png);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero div{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.hero h1{
+    font-size: 3rem;
+    color: var(--cinza-letras);
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.hero p{
+    color: var(--cinza-letras);
+    font-size: 1.5rem;
+}
+/*===============
+    SECTION 1
+===============*/
+
+.logo {
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+.gastronomia {
+    background-color: var(--branco-cards);
+    padding: 15px;
+    border-radius: 12px;
+    color: var();
+}
+
+.gastronomia h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/*===============
+   CATEGORIAS
+===============*/
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    min-height: 60px;
+    padding: 8px;
+
+    background-color: var(--creme-claro);
+    color: var(--marrom-texto);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid var(--marrom-secundario);
+    transition: 0.2s;
+}
+
+.categoria i {
+    font-size: 20px;
+}
+
+.categoria span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.categoria:hover {
+    background-color: var(--creme-hover);
+    transform: translateY(-2px);
+    z-index: 1;
+}
+
+/* =====================
+   LUGARES
+==================*/
+
+.lugares {
+    background-color: var(--creme-fundo-principal);
+
+    margin: 12px -15px -15px;
+    padding: 15px;
+
+    border-radius: 0 0 12px 12px;
+}
+
+.lugares > p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--marrom-secundario);
+}
+
+/*===========
+   CARDS
+===========*/
+
+.lugares-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.lugar-card {
+    min-width: 0;
+    width: 300px;
+    text-decoration: none;
+    color: var(--marrom-texto);
+    border-radius: 5px;
+    border: 1px solid var(--marrom-secundario);
+}
+
+.lugar-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.3 / 1;
+    object-fit: cover;
+    
+
+    transition: filter 0.2s;
+}
+
+.lugar-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.lugar-card:hover img {
+    filter: brightness(0.85);
+}
+
+    .rodape {
+    background-color: var(--verde-escuro-cabecalho);
+    color: white;
+    border-radius: 40px 40px 0 0;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rodape-marca {
+    max-width: 300px;
+}
+
+.rodape-logo {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.rodape h3 {
+    margin-bottom: 15px;
+}
+
+.rodape-navegacao {
+    display: block;
+    background-color: transparent;
+}
+
+.rodape ul {
+    list-style: none;
+}
+
+.rodape li {
+    margin-bottom: 10px;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
+    position: static;
+    margin: 0;
+    font-weight: normal;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes-sociais img {
+    width: 35px;
+    height: 35px;
+}
+
+.direitos-autorais {
+    border-top: 1px solid white;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*===================
+   RESPONSIVIDADE
+===================*/
+
+@media (max-width: 600px) {
+    .categorias-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lugares-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 380px) {
+    .lugares-grid {
+        grid-template-columns: 1fr;
+    }
+}

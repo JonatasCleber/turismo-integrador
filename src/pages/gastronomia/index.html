@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores de Seabra</title>
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="gastronomia.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+
+    <div class="painel">
+      <a href="">Inicio</a>
+      <a href="">Beleza</a>
+      <a href="../saude/index.html">Saúde</a>
+      <a href="../bem-estar/Bem_estar.html">Bem estar</a>
+      <a href="../gastronomia/index.html">Gastronomia</a>
+      <a href="../turismo/index.html">Turismo</a>
+    </div>
+    <nav class="nav1">
+      <div class="lo-burguer">
+        <button class="hamburguer" type="button" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <img src="../../../public/assets/images/global-img/logo.png" alt="logo" class="logo"/>
+      </div>
+
+      <div class="pesquisa">
+
+        <input type="search" placeholder="Pesquisar" />
+        <button type="button">&#8981;</button>
+      </div>
+
+      <a href="" class="btnEntrar">Entrar</a>
+
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Criatividade servida <br>à mesa.</h1>
+        <p>
+          Onde o sabor encontra a arte. <br> Pratos autorais preparados com ingredientes selecionados <br>para
+          transformar sua refeição em uma experiência única.
+        </p>
+      </div>
+    </section>
+
+    <section class="gastronomia" id="categorias">
+      <h2>Explore por categoria</h2>
+      <div class="categorias-grid">
+        <button onclick="filtrar('restaurantes')" class="categoria">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Restaurantes</span>
+        </button>
+
+        <button onclick="filtrar('hamburguerias')" class="categoria">
+          <i class="fa-solid fa-burger"></i>
+          <span>Hamburguerias</span>
+        </button>
+
+        <button onclick="filtrar('cafes')" class="categoria" >
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>Cafés</span>
+        </button>
+
+        <button onclick="filtrar('pizzarias')" class="categoria">
+          <i class="fa-solid fa-pizza-slice"></i>
+          <span>Pizzarias</span>
+        </button>
+
+        <button onclick="filtrar('lanchonetes')" class="categoria">
+          <i class="fa-solid fa-bread-slice"></i>
+          <span>Lanchonetes</span>
+        </button>
+
+        <button onclick="filtrar('todos')" class="categoria">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Ver todos</span>
+        </button>
+      </div>
+
+      <section class="lugares" id="lugares">
+
+        <h2>Lugares para conhecer</h2>
+
+        <p>
+          Uma seleção de lugares para sua próxima experiência gastronômica.
+        </p>
+
+        <div class="lugares-grid">
+          <a href="#" class="lugar-card" data-tipo="restaurantes">
+            <img src="assets/img/restaurante.jpg" alt="Restaurante com mesas preparadas para jantar" />
+            <h3>Restaurante</h3>
+          </a>
+
+          <a href="#" class="lugar-card" data-tipo="hamburguerias">
+            <img src="assets/img/hamburgueria.jpg" alt="Hambúrguer artesanal com queijo e salada" />
+            <h3>Hamburgueria</h3>
+          </a>
+
+          <a href="#" class="lugar-card" data-tipo="cafes">
+            <img src="assets/img/cafes.jpg" alt="Café servido em uma cafeteria aconchegante" />
+            <h3>Café</h3>
+          </a>
+          <a href="#" class="lugar-card" data-tipo="lanchonetes">
+            <img src="assets/img/lanchonete.jpg" alt="Café servido em uma cafeteria aconchegante" />
+            <h3>lanchonete</h3>
+          </a>
+
+          <a href="#" class="lugar-card" data-tipo="pizzarias">
+            <img src="assets/img/pizzaria.jpg" alt="Café servido em uma cafeteria aconchegante" />
+            <h3>pizzaria</h3>
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+
+      <section class="rodape-marca">
+        <img src="../../../public/assets/images/global-img/logo.png" alt="Logo Portal Mandacaru" class="rodape-logo">
+        <p>Descubra os melhores serviços da Chapada em um só lugar.</p>
+      </section>
+
+      <nav class="rodape-navegacao" aria-label="Categorias">
+        <h3>Categorias</h3>
+
+        <ul>
+          <li><a href="#">Beleza</a></li>
+          <li><a href="#">Bem-estar</a></li>
+          <li><a href="#">Saúde</a></li>
+          <li><a href="#">Gastronomia</a></li>
+        </ul>
+      </nav>
+
+      <nav class="rodape-navegacao" aria-label="Institucional">
+        <h3>Institucional</h3>
+
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Seja um parceiro</a></li>
+        </ul>
+      </nav>
+
+      <section class="rodape-redes">
+        <h3>Redes sociais</h3>
+
+        <div class="redes-sociais">
+          <a href="https://www.instagram.com/mandacaru_portal/" target="_blank" rel="noopener noreferrer">
+            <img src="../../../public/assets/images/global-img/instagram.png" alt="Instagram">
+          </a>
+
+          <a href="https://www.facebook.com/mandacaru_portal" target="_blank" rel="noopener noreferrer">
+            <img src="../../../public/assets/images/global-img/facebook.png" alt="Facebook">
+          </a>
+
+          <a href="https://wa.me/5577999999999" target="_blank" rel="noopener noreferrer">
+            <img src="../../../public/assets/images/global-img/whatsapp.png" alt="WhatsApp">
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <p class="direitos-autorais">
+      &copy; 2026 Portal Mandacarú.
+      Todos os direitos reservados.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="../login2/Conta.js" defer></script>
+</body>
+
+</html>
