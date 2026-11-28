@@ -31,9 +31,11 @@
     --cor-aviso: #F2A33A;
     --cor-erro: #D13438;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
     background: linear-gradient(180deg, #F5F8FD 0%, #E9EFF9 50%, #C9DDF8 100%);
     background-attachment: fixed;
@@ -41,51 +43,51 @@ body {
 }
 
 
-    .logo {
-        width: 150px;
-        height: auto;
-    }
+.logo {
+    width: 150px;
+    height: auto;
+}
 
 .pesquisa {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  gap: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
 }
 
 .pesquisa input {
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(216, 184, 121, 0.25);
-  color: var(--branco-cards);
-  outline: none;
-  width: 60vh;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(216, 184, 121, 0.25);
+    color: var(--branco-cards);
+    outline: none;
+    width: 60vh;
 }
 
 .pesquisa input::placeholder {
-  color: var(--dourado-detalhes);
+    color: var(--dourado-detalhes);
 }
 
 .pesquisa input:focus {
-  outline: 1px solid var(--dourado-detalhes);
+    outline: 1px solid var(--dourado-detalhes);
 }
 
 .pesquisa button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  color: var(--dourado-detalhes);
-  cursor: pointer;
-  transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    color: var(--dourado-detalhes);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .pesquisa button:hover {
-  color: var(--branco-cards);
+    color: var(--branco-cards);
 }
 
 /*=============
@@ -93,19 +95,20 @@ body {
 =============*/
 
 .nav1 {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: rgba(14, 28, 64, 0.9);
-  color: var(--cor-texto-sobre-primaria);
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(14, 28, 64, 0.9);
+    color: var(--cor-texto-sobre-primaria);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
+
 .navTags a:hover {
-  color: var(--cor-texto-suave);
-  text-decoration: underline;
+    color: var(--cor-texto-suave);
+    text-decoration: underline;
 }
 
 .nav1 .logo {
@@ -120,26 +123,26 @@ body {
 ==============*/
 
 .btnEntrar {
-  margin-right: 10px;
-  display: inline-block;
-  padding: 10px 25px;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-  color: var(--branco-cards);
-  background-color: var(--cor-primaria-escura);
-  transition: 0.2s;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--branco-cards);
+    background-color: var(--cor-primaria-escura);
+    transition: 0.2s;
 }
 
 .btnEntrar:hover {
-  background-color: var(--cor-primaria);
+    background-color: var(--cor-primaria);
 }
 
 .lo-burguer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 /*==============
@@ -161,12 +164,12 @@ body {
 }
 
 .painel a {
-  text-decoration: none;
-  color: var(--dourado-detalhes);
-  transition: 0.2s;
-  position: relative;
-  top: 150px;
-  left: 20px;
+    text-decoration: none;
+    color: var(--dourado-detalhes);
+    transition: 0.2s;
+    position: relative;
+    top: 150px;
+    left: 20px;
 }
 
 .hamburguer {
@@ -198,6 +201,7 @@ body:has(.hamburguer:hover) .painel,
 .painel:hover {
     transform: translateX(0);
 }
+
 .hero {
     display: flex;
     align-items: center;
@@ -240,14 +244,16 @@ body:has(.hamburguer:hover) .painel,
     margin: 18px 0 28px;
     color: #E6EEFB;
 }
-.botao-agendar{
+
+.botao-agendar {
     background-color: var(--cor-primaria);
     color: white;
     border-radius: 10px;
     border: 1px solid var(--cor-borda);
     padding: 10px;
 }
-.botao-agendar:hover{
+
+.botao-agendar:hover {
     background-color: var(--cor-primaria-escura);
 }
 
@@ -264,7 +270,7 @@ body:has(.hamburguer:hover) .painel,
 .equipe-edit {
     width: 100%;
     max-width: 1200px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -308,6 +314,7 @@ body:has(.hamburguer:hover) .painel,
     margin-bottom: 20px;
     object-fit: cover;
 }
+
 .equipe-descricao {
     font-size: 19px;
     color: var(--cor-texto-suave);
@@ -356,6 +363,7 @@ body:has(.hamburguer:hover) .painel,
     transform: translateY(-2px);
     z-index: 1;
 }
+
 /*conteudo, lugares*/
 
 .lugares {
@@ -364,19 +372,7 @@ body:has(.hamburguer:hover) .painel,
     padding: 20px;
     border-radius: 0 0 12px 12px;
 }
-.lugares h2{
-    font-size: 2.5rem;
-    font-family: georgia, sans-serif;
-    font-weight: 500;
-    text-align: center;
-}
-.lugares > p {
-    text-align: center;
-    font-family: Georgia, sans-serif;
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: var(--cor-texto);
-}
+
 
 /*===========
    CARDS
@@ -386,18 +382,19 @@ body:has(.hamburguer:hover) .painel,
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     justify-items: center;
-    gap: 8px;
+    gap: 20px;
 }
 
 .lugar-card {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
     padding: 10px;
-    align-items: center;
     min-width: 0;
-    width: 90%;
-    height: 40vh;
+    width: 100%;
+    height: auto;
     margin-top: 10px;
     background-color: var(--cor-destaque);
     text-decoration: none;
@@ -411,35 +408,79 @@ body:has(.hamburguer:hover) .painel,
     border-radius: 10px;
     border: 1px solid var(--cor-borda);
     display: block;
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 180px;
     aspect-ratio: 1.3 / 1;
     object-fit: cover;
-    
-    
+
+
     transition: filter 0.2s;
 }
 
 .lugar-card h3 {
-    width: 90%;
+    width: 100%;
     font-size: 1.5rem;
+    align-self: flex-start;
     font-family: georgia, sans-serif;
-    font-weight: 200;
+    font-weight: 600;
+    margin-bottom: 10px;
     margin-top: 5px;
 }
 
-.agendar{
+.especialidade {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    align-self: flex-start;
+
+    background-color: var(--cor);
+    color: #283B2D;
+
+   
+    border-radius: 6px;
+
+    font-size: 0.85rem;
+}
+.especialidade i {
+    font-size: 0.9rem;
+}
+
+.localizacao i {
+    color: var(--cor-primaria-escura);
+    font-size: 1rem;
+}
+
+.agendar i {
+    font-size: 1rem;
+}
+.localizacao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    font-size: 0.9rem;
+    margin: 12px 0;
+}
+
+.agendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
     background-color: var(--cor-primaria-escura);
     border-radius: 10px;
-    margin-top: 5px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     color: white;
     padding: 10px;
 }
-.agendar:hover{
+
+.agendar:hover {
     background-color: var(--cor-primaria);
 }
+
 /*principais escolhas */
 .principais-escolhas {
     background: var(--cor-fundo);
@@ -639,7 +680,7 @@ body:has(.hamburguer:hover) .painel,
     opacity: 0.85;
 }
 
- .rodape {
+.rodape {
     background-color: rgba(14, 28, 64, 0.9);
     color: white;
     border-radius: 40px 40px 0 0;
