@@ -365,6 +365,9 @@ body:has(.hamburguer:hover) .painel,
     border-radius: 0 0 12px 12px;
 }
 .lugares h2{
+    font-size: 2.5rem;
+    font-family: georgia, sans-serif;
+    font-weight: 500;
     text-align: center;
 }
 .lugares > p {
@@ -395,6 +398,7 @@ body:has(.hamburguer:hover) .painel,
     min-width: 0;
     width: 90%;
     height: 40vh;
+    margin-top: 10px;
     background-color: var(--cor-destaque);
     text-decoration: none;
     color: var(--marrom-texto);
@@ -412,7 +416,7 @@ body:has(.hamburguer:hover) .painel,
     aspect-ratio: 1.3 / 1;
     object-fit: cover;
     
-
+    
     transition: filter 0.2s;
 }
 
@@ -424,9 +428,6 @@ body:has(.hamburguer:hover) .painel,
     margin-top: 5px;
 }
 
-.lugar-card:hover img {
-    filter: brightness(0.85);
-}
 .agendar{
     background-color: var(--cor-primaria-escura);
     border-radius: 10px;
@@ -435,6 +436,9 @@ body:has(.hamburguer:hover) .painel,
     text-align: center;
     color: white;
     padding: 10px;
+}
+.agendar:hover{
+    background-color: var(--cor-primaria);
 }
 /*principais escolhas */
 .principais-escolhas {
