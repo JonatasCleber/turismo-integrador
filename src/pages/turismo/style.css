@@ -3,7 +3,8 @@
     --dourado-detalhes: #d8b879;
     --branco-cards: #ffffff;
     --terracota-botoes: #c66b45;
-    --verde-escuro-cabecalho: #5a3e2a;
+    --marrom-escuro-conteudo: #5a3e2a;
+    --marrom-escuro-cabecalho: #5a3e2aec;
     --verde-claro-letras: #71805a;
     --cinza-letras: #202020;
 }
@@ -60,17 +61,14 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: var(--verde-escuro-cabecalho);
+    background-color: var(--marrom-escuro-cabecalho);
     color: var(--dourado-detalhes);
     justify-content: space-between;
     position: fixed;
     width: 100%;
     z-index: 1000;
-}
-
-.painel a:hover {
-    color: #ffe0a3;
-    text-decoration: underline;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 .nav1 .logo {
@@ -106,24 +104,36 @@
 .painel {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     height: 100vh;
     width: 200px;
     transform: translateX(-150%);
     transition: transform 0.65s ease;
-    background-color: var(--verde-escuro-cabecalho);
-    color: var(--dourado-detalhes);
+    background-color: var(--marrom-escuro-cabecalho);
     position: fixed;
     z-index: 1000;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
 }
 
-.painel a {
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
     text-decoration: none;
-    color: var(--dourado-detalhes);
-    transition: 0.2s;
+    padding: 17px 28px;
+    font-weight: 600;
+    color: #f5efe8;
     position: relative;
-    top: 150px;
-    left: 20px;
+    top: 170px;
+    border-bottom: solid 0.1px rgba(255, 255, 255, 0.082);
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-left: solid 2px white;
+    color: var(--creme-fundo-principal);
 }
 
 .hamburguer {
@@ -160,10 +170,11 @@ body:has(.hamburguer:hover) .painel,
     display: flex;
     align-items: center;
     background-image: url(../../../public/assets/images/turismo-img/fundo.png);
-    min-height: 100vh;
+    min-height: 93vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-bottom: solid 3px var(--marrom-escuro-conteudo);
 }
 
 .titulo {
@@ -181,9 +192,27 @@ body:has(.hamburguer:hover) .painel,
 
 .titulo p {
     color: var(--creme-fundo-principal);
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     max-width: 500px;
     margin-top: 20px;
+    letter-spacing: 0.8px;
+}
+
+.filtro-turismo {
+    background-color: var(--creme-fundo-principal);
+    position: relative;
+    top: 0;
+}
+
+.filtro-turismo h2 {
+    text-align: center;
+    font-family: serif;
+    font-weight: 600;
+    color: var(--marrom-escuro-conteudo);
+    font-size: 1.9rem;
+    position: relative;
+    top: 10px;
+    text-shadow: 0 3px 30px var(--marrom-escuro-conteudo);
 }
 
 .categorias-grid {
@@ -192,6 +221,7 @@ body:has(.hamburguer:hover) .painel,
     gap: 8px;
     background-color: var(--creme-fundo-principal);
     padding: 8px;
+    margin-top: 20px;
 }
 
 .categoria {
@@ -204,7 +234,7 @@ body:has(.hamburguer:hover) .painel,
     min-height: 60px;
     padding: 8px;
 
-    background-color: var(--verde-escuro-cabecalho);
+    background-color: var(--marrom-escuro-conteudo);
     color: var(--dourado-detalhes);
     text-decoration: none;
     text-align: center;
@@ -223,7 +253,7 @@ body:has(.hamburguer:hover) .painel,
 }
 
 .categoria:hover {
-    background-color: var(--verde-claro-letras);
+    background-color: #7c5539;
     transform: translateY(-2px);
     z-index: 1;
 }
@@ -248,14 +278,14 @@ body:has(.hamburguer:hover) .painel,
 }
 
 .mais-vistos p {
-    color: var(--verde-escuro-cabecalho);
+    color: var(--marrom-escuro-conteudo);
     font-size: 12px;
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
 
 .mais-vistos h2 {
-    color: var(--verde-escuro-cabecalho);
+    color: var(--marrom-escuro-conteudo);
     font-size: 55px;
     font-weight: normal;
     line-height: 1.1;
@@ -267,11 +297,11 @@ body:has(.hamburguer:hover) .painel,
 }
 
 .mais-vistos span {
-    display: block;
-    color: var(--cinza-letras);
+     display: block;
+    color: #76695e;
     font-size: 16px;
     line-height: 1.6;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .servicos {
@@ -302,14 +332,14 @@ body:has(.hamburguer:hover) .painel,
 }
 
 .nome-servico h3 {
-    color: var(--verde-escuro-cabecalho);
+    color: var(--marrom-escuro-conteudo);
     font-size: 25px;
     font-weight: normal;
     margin: 0 0 8px;
 }
 
 .nome-servico span {
-    color: var(--verde-escuro-cabecalho);
+    color: #76695e;
     font-size: 13px;
 }
 
@@ -320,8 +350,8 @@ body:has(.hamburguer:hover) .painel,
 
 .servico button {
     background-color: transparent;
-    border: 1px solid var(--verde-escuro-cabecalho);
-    color: var(--verde-escuro-cabecalho);
+    border: 1px solid var(--marrom-escuro-conteudo);
+    color: var(--marrom-escuro-conteudo);
     padding: 12px 20px;
     border-radius: 30px;
     font-size: 13px;
@@ -330,7 +360,7 @@ body:has(.hamburguer:hover) .painel,
 }
 
 .servico button:hover {
-    background-color: var(--verde-escuro-cabecalho);
+    background-color: var(--marrom-escuro-conteudo);
     color: var(--branco-cards);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -342,8 +372,87 @@ body:has(.hamburguer:hover) .painel,
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.como-funciona {
+    background-color: var(--creme-fundo-principal);
+    padding: 10px 8% 90px;
+}
+
+.cf-titulo {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.cf-titulo h2 {
+    color: #302a25;
+    font-size: 45px;
+    font-weight: normal;
+    font-family: Georgia, serif;
+}
+
+.cf-titulo span {
+    display: block;
+    color: #76695e;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.cf-passos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cf-card {
+    flex: 1;
+    background-color: var(--marrom-escuro-conteudo);
+    color: rgb(234, 223, 204);
+    border-radius: 12px;
+    padding: 40px 25px 35px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cf-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 25px rgba(0, 0, 0, 0.4);
+}
+
+.cf-numero {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 1px solid var(--marrom-escuro-conteudo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #412c1e, #c4a567);
+}
+
+.cf-card h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.cf-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+
 .rodape {
-    background-color: var(--verde-escuro-cabecalho);
+    background-color: var(--marrom-escuro-conteudo);
     color: white;
     border-radius: 40px 40px 0 0;
     padding: 40px;
