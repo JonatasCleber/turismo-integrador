@@ -360,14 +360,16 @@ body:has(.hamburguer:hover) .painel,
 
 .lugares {
     background-color: var(--creme-fundo-principal);
-
     margin: 12px 0 30px;
     padding: 20px;
-
     border-radius: 0 0 12px 12px;
 }
-
+.lugares h2{
+    text-align: center;
+}
 .lugares > p {
+    text-align: center;
+    font-family: Georgia, sans-serif;
     font-size: 14px;
     margin-bottom: 8px;
     color: var(--cor-texto);
@@ -387,21 +389,25 @@ body:has(.hamburguer:hover) .painel,
 .lugar-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 10px;
     align-items: center;
     min-width: 0;
     width: 90%;
     height: 40vh;
-    background-color: #174C97;
+    background-color: var(--cor-destaque);
     text-decoration: none;
     color: var(--marrom-texto);
     border-radius: 5px;
-    border: 1px solid var(--marrom-secundario);
+    border: 1px solid var(--cor-primaria);
 }
 
 .lugar-card img {
     background-color: #8a919b;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
     display: block;
-    width: 100%;
+    width: 90%;
     height: 70%;
     aspect-ratio: 1.3 / 1;
     object-fit: cover;
@@ -411,13 +417,24 @@ body:has(.hamburguer:hover) .painel,
 }
 
 .lugar-card h3 {
-    font-size: 14px;
-    font-weight: 600;
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: georgia, sans-serif;
+    font-weight: 200;
     margin-top: 5px;
 }
 
 .lugar-card:hover img {
     filter: brightness(0.85);
+}
+.agendar{
+    background-color: var(--cor-primaria-escura);
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
 /*principais escolhas */
 .principais-escolhas {
